@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean Boutique | Events &amp; Workshops</title>
+
+    <link rel="icon" type="image/png" href="../IMAGES/BEAN_BOUTIQUE_logo.png">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Shared JavaScript -->
+    <script defer src="../JS/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html" class="logo-link" aria-label="Bean Boutique home">
+                <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                     alt="Bean Boutique brand logo featuring a coffee-inspired emblem"
+                     class="logo-image">
+
+                <span class="logo-name">
+                    <span class="logo-main">BEAN</span>
+                    <span class="logo-sub">BOUTIQUE</span>
+                </span>
+            </a>
+        </div>
+
+        <nav id="mainNavigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html">Coffee</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="events.html" class="active" aria-current="page">Events</a></li>
+                <li><a href="offers.html">Offers</a></li>
+
+                <li>
+                    <a href="cart.html" class="cart-link"
+                       aria-label="Shopping cart" title="Shopping cart">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span id="cartBadge" 
+                        class="cart-badge hidden">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-controls">
+            <button type="button" class="theme-button" id="themeButton"
+                    aria-label="Switch to dark mode" aria-pressed="false">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+
+            <button type="button" class="menu-button" id="menuButton"
+                    aria-label="Open navigation" aria-expanded="false"
+                    aria-controls="mainNavigation">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main id="mainContent">
+
+        <!-- Events hero -->
+        <section class="page-hero events-page-hero">
+
+            <img src="../IMAGES/EVENTS_HERO.png"
+                 alt="Coffee workshop setting with brewing equipment prepared for a tasting and learning session"
+                 class="events-hero-image">
+
+            <div class="events-hero-content">
+                <p class="small-title">EVENTS &amp; WORKSHOPS</p>
+                <h1>Learn, Taste and Connect</h1>
+
+                <p>
+                    Discover coffee experiences designed around learning,
+                    tasting, community and conversation. Explore our upcoming
+                    workshops and seasonal gatherings, and reserve your place
+                    at an event that interests you.
+                </p>
+
+                <a href="offers.html" class="button">View Thadingyut Offer</a>
+            </div>
+
+        </section>
+
+
+        <!-- Event cards -->
+        <section class="section" id="upcomingEvents">
+
+            <p class="small-title">UPCOMING EVENTS</p>
+            <h2>Find Your Coffee Experience</h2>
+
+            <p class="section-intro">
+                From guided tastings to practical brewing workshops,
+                discover experiences created for coffee enthusiasts.
+                Select an available event to begin your registration.
+            </p>
+
+            <div class="card-container event-container">
+
+                <article class="card event-card">
+
+                    <label class="event-selection" for="coffee-tasting">
+                        <input type="radio"
+                               id="coffee-tasting"
+                               name="selectedEvent"
+                               value="Coffee Tasting Evening"
+                               data-event-date="2027-05-15"
+                               form="eventRegistration"
+                               aria-label="Select Coffee Tasting Evening on 15 May 2027">
+                        <span class="event-selection-text">Select Event</span>
+                    </label>
+
+                    <img src="../IMAGES/COFFEE_TASTING_Evening.png"
+                         alt="Coffee tasting session with prepared samples for comparing coffee aromas and flavours"
+                         class="event-card-image" loading="lazy">
+
+                    <p class="small-title">15 MAY 2027</p>
+                    <h3>Coffee Tasting Evening</h3>
+
+                    <p>
+                        Explore different coffee aromas, flavours and origins
+                        through a guided tasting session. Discover how the
+                        characteristics of different beans influence each cup.
+                    </p>
+
+                    <div class="event-information">
+                        <p><i class="far fa-clock" aria-hidden="true"></i> 6:30 PM – 8:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bean Boutique Studio</p>
+                        <p><i class="fas fa-ticket-alt" aria-hidden="true"></i> £12 per person</p>
+                    </div>
+
+                    <p class="event-availability">Capacity: 80 guests</p>
+                </article>
+
+
+                <article class="card event-card">
+
+                    <label class="event-selection" for="brewing-class">
+                        <input type="radio"
+                               id="brewing-class"
+                               name="selectedEvent"
+                               value="Brewing Class"
+                               data-event-date="2027-06-19"
+                               form="eventRegistration"
+                               aria-label="Select Brewing Class on 19 June 2027">
+                        <span class="event-selection-text">Select Event</span>
+                    </label>
+
+                    <img src="../IMAGES/BREWING_CLASS.png"
+                         alt="Coffee brewing equipment arranged for a practical demonstration of grind size, water and brewing techniques"
+                         class="event-card-image" loading="lazy">
+
+                    <p class="small-title">19 JUNE 2027</p>
+                    <h3>Brewing Class</h3>
+
+                    <p>
+                        Learn practical brewing techniques and discover how
+                        grind size, water temperature and brewing time affect
+                        flavour. Develop skills that you can practise at home.
+                    </p>
+
+                    <div class="event-information">
+                        <p><i class="far fa-clock" aria-hidden="true"></i> 2:00 PM – 4:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bean Boutique Brew Room</p>
+                        <p><i class="fas fa-ticket-alt" aria-hidden="true"></i> £18 per person</p>
+                    </div>
+
+                    <p class="event-availability">Capacity: 60 guests</p>
+                </article>
+
+
+                <article class="card event-card">
+
+                    <label class="event-selection" for="meet-roaster">
+                        <input type="radio"
+                               id="meet-roaster"
+                               name="selectedEvent"
+                               value="Meet the Roaster"
+                               data-event-date="2027-07-17"
+                               form="eventRegistration"
+                               aria-label="Select Meet the Roaster on 17 July 2027">
+                        <span class="event-selection-text">Select Event</span>
+                    </label>
+
+                    <img src="../IMAGES/MEET_THE_ROASTER.png"
+                         alt="Coffee roasting equipment and freshly roasted beans illustrating the coffee roasting process"
+                         class="event-card-image" loading="lazy">
+
+                    <p class="small-title">17 JULY 2027</p>
+                    <h3>Meet the Roaster</h3>
+
+                    <p>
+                        Discover how coffee beans are selected, developed and
+                        roasted to create distinctive aromas and flavours.
+                        Learn about the roasting process and the craft behind
+                        your favourite coffee.
+                    </p>
+
+                    <div class="event-information">
+                        <p><i class="far fa-clock" aria-hidden="true"></i> 6:00 PM – 7:30 PM</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bean Boutique Roastery</p>
+                        <p><i class="fas fa-ticket-alt" aria-hidden="true"></i> £15 per person</p>
+                    </div>
+
+                    <p class="event-availability">Capacity: 70 guests</p>
+                </article>
+
+
+                <article class="card event-card festival-event">
+
+                    <label class="event-selection" for="thadingyut-light">
+                        <input type="radio"
+                               id="thadingyut-light"
+                               name="selectedEvent"
+                               value="Thadingyut Candlelight Coffee Evening"
+                               data-event-date="2026-10-25"
+                               form="eventRegistration"
+                               aria-label="Select the free Thadingyut Candlelight Coffee Evening on 25 October 2026">
+                        <span class="event-selection-text">Select Event</span>
+                    </label>
+
+                    <img src="../IMAGES/THADINGYUT_CANDLELIGHT_COFFEE.png"
+                         alt="Coffee and warm candlelight arranged for a peaceful Thadingyut Festival of Lights gathering"
+                         class="event-card-image" loading="lazy">
+
+                    <p class="small-title">25 OCTOBER 2026</p>
+                    <h3>Thadingyut Candlelight Coffee Evening</h3>
+
+                    <p>
+                        Celebrate the Festival of Lights with an evening of
+                        coffee, warm desserts and candlelit conversation in
+                        a welcoming atmosphere.
+                    </p>
+
+                    <div class="event-information">
+                        <p><i class="far fa-clock" aria-hidden="true"></i> 6:30 PM – 8:30 PM</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bean Boutique Gallery</p>
+                        <p><i class="fas fa-ticket-alt" aria-hidden="true"></i> Free entry</p>
+                    </div>
+
+                    <p class="event-availability festival-label">Free entry · Thadingyut Festival Special</p>
+                    <p class="event-availability">Capacity: 80 guests</p>
+                </article>
+
+
+                <article class="card event-card festival-event">
+
+                    <label class="event-selection" for="thadingyut-culture">
+                        <input type="radio"
+                               id="thadingyut-culture"
+                               name="selectedEvent"
+                               value="Thadingyut Coffee and Culture Workshop"
+                               data-event-date="2026-10-26"
+                               form="eventRegistration"
+                               aria-label="Select the free Thadingyut Coffee and Culture Workshop on 26 October 2026">
+                        <span class="event-selection-text">Select Event</span>
+                    </label>
+
+                    <img src="../IMAGES/THADINGYUT_COFFEE_AND_CULTURE.png"
+                         alt="Coffee and creative workshop materials prepared for an activity inspired by Myanmar's Thadingyut Festival"
+                         class="event-card-image" loading="lazy">
+
+                    <p class="small-title">26 OCTOBER 2026</p>
+                    <h3>Thadingyut Coffee &amp; Culture Workshop</h3>
+
+                    <p>
+                        Explore coffee-inspired creative activities alongside
+                        stories and traditions connected with Myanmar's
+                        Festival of Lights.
+                    </p>
+
+                    <div class="event-information">
+                        <p><i class="far fa-clock" aria-hidden="true"></i> 2:00 PM – 4:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bean Boutique Gallery</p>
+                        <p><i class="fas fa-ticket-alt" aria-hidden="true"></i> Free entry</p>
+                    </div>
+
+                    <p class="event-availability festival-label">Free entry · Thadingyut Festival Special</p>
+                    <p class="event-availability">Capacity: 70 guests</p>
+                </article>
+
+
+                <article class="card event-card festival-event">
+
+                    <label class="event-selection" for="thadingyut-family">
+                        <input type="radio"
+                               id="thadingyut-family"
+                               name="selectedEvent"
+                               value="Thadingyut Family Brew Morning"
+                               data-event-date="2026-10-27"
+                               form="eventRegistration"
+                               aria-label="Select the free Thadingyut Family Brew Morning on 27 October 2026">
+                        <span class="event-selection-text">Select Event</span>
+                    </label>
+
+                    <img src="../IMAGES/THADINGYUT_FAMILY_BREW_MORNING.png"
+                         alt="Coffee brewing supplies and refreshments prepared for a relaxed family-friendly Thadingyut gathering"
+                         class="event-card-image" loading="lazy">
+
+                    <p class="small-title">27 OCTOBER 2026</p>
+                    <h3>Thadingyut Family Brew Morning</h3>
+
+                    <p>
+                        Enjoy a relaxed morning of simple brewing, coffee and
+                        seasonal treats with family and friends in a welcoming
+                        atmosphere.
+                    </p>
+
+                    <div class="event-information">
+                        <p><i class="far fa-clock" aria-hidden="true"></i> 9:00 AM – 11:00 AM</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bean Boutique Studio</p>
+                        <p><i class="fas fa-ticket-alt" aria-hidden="true"></i> Free entry</p>
+                    </div>
+
+                    <p class="event-availability festival-label">Free entry · Thadingyut Festival Special</p>
+                    <p class="event-availability">Capacity: 90 guests</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Thadingyut events -->
+        <section class="section thadingyut-event-section">
+
+            <div class="two-column">
+
+                <div>
+                    <p class="small-title">THADINGYUT 2026</p>
+                    <h2>Coffee Under the Festival Lights</h2>
+
+                    <p>
+                        Thadingyut is celebrated across Myanmar as the
+                        Festival of Lights. Its traditions inspire a seasonal
+                        programme of coffee experiences and community activities.
+                    </p>
+
+                    <p>
+                        Join Bean Boutique for creative workshops, tasting
+                        sessions and relaxed gatherings during the festival period.
+                    </p>
+
+                    <p>
+                        All three featured Thadingyut events offer free entry
+                        as part of our seasonal programme.
+                    </p>
+
+                    <a href="offers.html" class="button">View Thadingyut Offer</a>
+                </div>
+
+                <img src="../IMAGES/THADINGYUT_LIGHTS_AND_COFFEE.png"
+                     alt="Coffee and decorative lights creating a warm atmosphere inspired by Myanmar's Thadingyut Festival"
+                     class="events-feature-image" loading="lazy">
+
+            </div>
+
+        </section>
+
+
+        <!-- Google Maps widget -->
+        <section class="section event-location-section" id="eventLocation">
+
+            <p class="small-title">FIND US</p>
+            <h2>Visit Bean Boutique</h2>
+
+            <p class="section-intro">
+                Find our sample Yangon venue and plan your visit before
+                attending an event.
+            </p>
+
+            <div class="event-map-layout">
+
+                <div class="event-map-frame">
+                    <iframe
+                        title="Map showing the sample Bean Boutique venue in Yangon"
+                        src="https://maps.google.com/maps?q=No.%2031%2C%20Thiri%20Mingalar%2C%205%20Street%2C%20corner%20of%20Baho%20Road%2C%20Yangon%2011041&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <aside class="event-location-card">
+
+                    <p class="small-title">OUR SAMPLE VENUE</p>
+                    <h3>Bean Boutique, Yangon</h3>
+
+                    <div class="location-detail">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <p>
+                            No. 31, Thiri Mingalar, 5th Street,
+                            corner of Baho Road, Yangon 11041.
+                        </p>
+                    </div>
+
+                    <div class="location-detail">
+                        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                        <p>Check your selected event's date and time before travelling.</p>
+                    </div>
+
+                    <div class="location-detail">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                        <p>
+                            This is a sample venue for the website assignment.
+                            Confirm the actual venue before publishing.
+                        </p>
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=No.%2031%2C%20Thiri%20Mingalar%2C%205%20Street%2C%20corner%20of%20Baho%20Road%2C%20Yangon%2011041"
+                       class="button" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-directions" aria-hidden="true"></i>
+                        Get Directions
+                    </a>
+
+                </aside>
+
+            </div>
+        </section>
+
+
+        <!-- Event registration -->
+        <section class="section" id="registration">
+
+            <p class="small-title">RESERVE YOUR PLACE</p>
+            <h2>Event Registration</h2>
+
+            <p class="section-intro">
+                Select an available event, complete your details and
+                prepare a registration email.
+            </p>
+
+            <div class="event-selection-help">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+
+                <div>
+                    <h3>Please select an upcoming event above.</h3>
+
+                    <p>
+                        Choose an available event card before completing this
+                        form. Events become unavailable for selection when
+                        their scheduled date arrives.
+                    </p>
+                </div>
+            </div>
+
+            <div class="event-registration-layout">
+
+                <!-- Email registration form -->
+                <form id="eventRegistration" class="registration-form"
+                      data-booking-email="waungakaaaron@gmail.com">
+
+                    <h3>Your Details</h3>
+
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName"
+                           placeholder="e.g. John" autocomplete="given-name" required>
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName"
+                           placeholder="e.g. Smith" autocomplete="family-name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="e.g. john@example.com"
+                           autocomplete="email" required>
+
+                    <label for="guestNumber">Number of Guests</label>
+                    <select id="guestNumber" name="guestNumber" required>
+                        <option value="">Select number of guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7 Guests</option>
+                        <option value="8">8 Guests</option>
+                        <option value="9">9 Guests</option>
+                        <option value="10">10 Guests</option>
+                        <option value="11-15">11-15 Guests</option>
+                        <option value="16-20">16-20 Guests</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Attendance Preference</legend>
+
+                        <label>
+                            <input type="radio" name="attendance"
+                                   value="Individual" required>
+                            Individual
+                        </label>
+
+                        <label>
+                            <input type="radio" name="attendance" value="Group">
+                            Group
+                        </label>
+                    </fieldset>
+
+                    <label for="specialRequest">Special Request</label>
+                    <textarea id="specialRequest" name="specialRequest"
+                              rows="4" placeholder="Optional message or request"></textarea>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="bookingTerms"
+                               name="bookingTerms" required>
+
+                        <span>
+                            I understand that this is a reservation request
+                            and availability must be confirmed.
+                        </span>
+                    </label>
+
+                    <button type="submit" class="button">
+                        <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                        Prepare Registration Email
+                    </button>
+
+                    <p id="eventMessage" class="form-message"
+                       aria-live="polite"></p>
+
+                </form>
+
+
+                <aside class="event-info-panel">
+
+                    <p class="small-title">PLAN YOUR VISIT</p>
+                    <h3>Make It a Coffee Moment</h3>
+
+                    <p>
+                        Discover new flavours, learn brewing techniques and
+                        meet fellow coffee enthusiasts through our events.
+                    </p>
+
+                    <div class="event-info-item">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+
+                        <div>
+                            <h4>Event Venues</h4>
+
+                            <p>
+                                Bean Boutique Studio, Brew Room,
+                                Roastery and Gallery.
+                            </p>
+
+                            <p class="event-info-note">
+                                Refer to the venue shown on your selected event.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-info-item">
+                        <i class="far fa-clock" aria-hidden="true"></i>
+
+                        <div>
+                            <h4>Session Duration</h4>
+
+                            <p>
+                                Most experiences last between 60 and 120 minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-info-item">
+                        <i class="fas fa-coffee" aria-hidden="true"></i>
+
+                        <div>
+                            <h4>What to Expect</h4>
+
+                            <p>
+                                Coffee tasting, brewing demonstrations and
+                                a relaxed learning experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-info-note-box">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+
+                        <div>
+                            <h4>About Your Registration</h4>
+
+                            <p>
+                                Once an email recipient is configured, the form
+                                opens your email application with a prepared request.
+                                You must send the email yourself; a place is
+                                not automatically confirmed.
+                            </p>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-brand-link"
+                   aria-label="Bean Boutique home">
+
+                    <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                         alt="Bean Boutique brand logo featuring a coffee-inspired emblem"
+                         class="footer-brand-image">
+
+                    <span class="footer-brand-name">
+                        <span class="footer-brand-main">BEAN</span>
+                        <span class="footer-brand-sub">BOUTIQUE</span>
+                    </span>
+                </a>
+
+                <p>Coffee, craft and community.</p>
+            </div>
+
+            <div class="footer-explore">
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="coffee.html">Coffee</a>
+                <a href="equipment.html">Equipment</a>
+                <a href="offers.html">Offers</a>
+
+                <a href="cart.html" class="footer-cart-link"
+                   aria-label="Shopping cart" title="Shopping cart">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>hello@beanboutique.com</p>
+                <p>+95 9 000 000 000</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

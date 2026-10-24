@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean Boutique | Offers &amp; Subscriptions</title>
+
+    <link rel="icon" type="image/png" href="../IMAGES/BEAN_BOUTIQUE_logo.png">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Shared JavaScript -->
+    <script defer src="../JS/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html" class="logo-link" aria-label="Bean Boutique home">
+
+                <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                     alt="Bean Boutique logo"
+                     class="logo-image">
+
+                <span class="logo-name">
+                    <span class="logo-main">BEAN</span>
+                    <span class="logo-sub">BOUTIQUE</span>
+                </span>
+
+            </a>
+        </div>
+
+        <nav id="mainNavigation" aria-label="Main navigation">
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html">Coffee</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="events.html">Events</a></li>
+
+                <li>
+                    <a href="offers.html" class="active" aria-current="page">
+                        Offers
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html"
+                       class="cart-link"
+                       aria-label="Shopping cart"
+                       title="Shopping cart">
+
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+
+                        <span id="cartBadge" 
+                        class="cart-badge hidden">0</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <button type="button"
+                    class="theme-button"
+                    id="themeButton"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false">
+
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+
+            <button type="button"
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="mainNavigation">
+
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main id="mainContent">
+
+        <!-- Offers hero -->
+        <section class="page-hero">
+
+            <img src="../IMAGES/OFFERS_HERO.png"
+                 alt="Coffee and brewing equipment featured in Bean Boutique offers"
+                 fetchpriority="high">
+
+            <div>
+
+                <p class="small-title">SPECIAL OFFERS</p>
+
+                <h1>More Coffee, More Moments</h1>
+
+                <p>
+                    Discover seasonal promotions, welcome rewards
+                    and flexible coffee plans designed around
+                    the way you enjoy coffee.
+                </p>
+
+                <div class="button-group">
+
+                    <a href="#thadingyutOffer" class="button">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        Seasonal Offers
+                    </a>
+
+                    <a href="#subscriptions" class="button light-button">
+                        <i class="fas fa-coffee" aria-hidden="true"></i>
+                        Coffee Plans
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Thadingyut seasonal promotion -->
+        <section class="section thadingyut-section" id="thadingyutOffer">
+
+            <div class="thadingyut-content">
+
+                <p class="small-title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    THADINGYUT 2026
+                </p>
+
+                <h2>Thadingyut Lights &amp; Coffee</h2>
+
+                <p>
+                    Celebrate Myanmar's Festival of Lights with
+                    selected coffee and brewing favourites from
+                    <strong>25–27 October 2026</strong>.
+                </p>
+
+                <div class="thadingyut-details">
+
+                    <div class="promo-detail">
+
+                        <span class="promo-detail-title">
+                            THE OFFER
+                        </span>
+
+                        <strong>15% OFF</strong>
+
+                        <span>Selected coffee and equipment</span>
+
+                    </div>
+
+
+                    <div class="promo-detail">
+
+                        <span class="promo-detail-title">
+                            SEASONAL CODE
+                        </span>
+
+                        <strong>LIGHTS15</strong>
+
+                        <span>Promotional preview</span>
+
+                    </div>
+
+
+                    <div class="promo-detail">
+
+                        <span class="promo-detail-title">
+                            OFFER DATES
+                        </span>
+
+                        <strong>25–27 OCT</strong>
+
+                        <span>Thadingyut 2026</span>
+
+                    </div>
+
+                </div>
+
+                <p class="event-info-note">
+                    This is a seasonal promotion preview.
+                    LIGHTS15 is not processed by the demonstration cart,
+                    which currently supports the claimed WELCOME10 code.
+                </p>
+
+                <div class="promo-actions">
+
+                    <a href="coffee.html" class="button">
+                        <i class="fas fa-coffee" aria-hidden="true"></i>
+                        Explore Coffee
+                    </a>
+
+                    <a href="events.html" class="button light-button">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                        Explore Events
+                    </a>
+
+                </div>
+
+            </div>
+
+            <img src="../IMAGES/THADINGYUT_PROMOTION.png"
+                 alt="Thadingyut Festival of Lights coffee promotion"
+                 loading="lazy">
+
+        </section>
+
+
+        <!-- Featured promotions slideshow -->
+        <section class="section" id="featuredPromotions">
+
+            <p class="small-title">FEATURED HIGHLIGHTS</p>
+
+            <h2>Featured Coffee Moments</h2>
+
+            <p class="section-intro">
+                Explore seasonal coffees, thoughtful gifts and
+                experiences to share with friends and family.
+            </p>
+
+            <div class="promotion-slider"
+                 id="promotionSlider"
+                 role="region"
+                 aria-roledescription="carousel"
+                 aria-label="Featured promotions">
+
+                <button type="button"
+                        class="promotion-button promotion-button-prev"
+                        id="promotionPrev"
+                        aria-label="Previous promotion">
+
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+
+                </button>
+
+
+                <div class="promotion-track">
+
+                    <article class="promotion-slide"
+                             role="region"
+                             aria-roledescription="slide"
+                             aria-label="1 of 3">
+
+                        <img src="../IMAGES/THADINGYUT_COFFEE_COLLECTION.png"
+                             alt="Seasonal Thadingyut coffee collection"
+                             loading="lazy">
+
+                        <div class="promotion-content">
+
+                            <p class="small-title">SEASONAL PICKS</p>
+
+                            <h3>Festival Coffee Collection</h3>
+
+                            <p>
+                                Discover selected coffees for warm evenings,
+                                celebrations and quiet moments during Thadingyut.
+                            </p>
+
+                            <a href="coffee.html" class="text-link">
+                                Explore the Collection
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="promotion-slide"
+                             role="region"
+                             aria-roledescription="slide"
+                             aria-label="2 of 3">
+
+                        <img src="../IMAGES/THADINGYUT_GIFT_SET.png"
+                             alt="Coffee and brewing gift set for the Festival of Lights"
+                             loading="lazy">
+
+                        <div class="promotion-content">
+
+                            <p class="small-title">THOUGHTFUL GIFTING</p>
+
+                            <h3>Share a Cup of Light</h3>
+
+                            <p>
+                                Explore coffee and brewing gifts for friends
+                                and family throughout the festival season.
+                            </p>
+
+                            <a href="equipment.html" class="text-link">
+                                Explore Brewing Gifts
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="promotion-slide"
+                             role="region"
+                             aria-roledescription="slide"
+                             aria-label="3 of 3">
+
+                        <img src="../IMAGES/COFFEE_TASTING_Evening.png"
+                             alt="Coffee tasting experience at an evening gathering"
+                             loading="lazy">
+
+                        <div class="promotion-content">
+
+                            <p class="small-title">COMMUNITY</p>
+
+                            <h3>Evening Coffee Tasting</h3>
+
+                            <p>
+                                Learn about different coffee flavours
+                                and brewing styles with fellow coffee lovers.
+                            </p>
+
+                            <a href="events.html" class="text-link">
+                                Discover Tasting Events
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <button type="button"
+                        class="promotion-button promotion-button-next"
+                        id="promotionNext"
+                        aria-label="Next promotion">
+
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+
+                </button>
+
+
+                <div class="promotion-dots"
+                     id="promotionDots"
+                     role="group"
+                     aria-label="Select a promotion">
+
+                    <button type="button"
+                            class="promotion-dot active"
+                            data-slide="0"
+                            aria-label="Show promotion 1"
+                            aria-pressed="true">
+                    </button>
+
+                    <button type="button"
+                            class="promotion-dot"
+                            data-slide="1"
+                            aria-label="Show promotion 2"
+                            aria-pressed="false">
+                    </button>
+
+                    <button type="button"
+                            class="promotion-dot"
+                            data-slide="2"
+                            aria-label="Show promotion 3"
+                            aria-pressed="false">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Welcome discount -->
+        <section class="section">
+
+            <div class="offer-section">
+
+                <div>
+
+                    <p class="small-title">A WARM WELCOME</p>
+
+                    <h2>10% Off Your First Purchase</h2>
+
+                    <p>
+                        New to Bean Boutique? Claim your welcome code
+                        on the Home page and use WELCOME10 in your
+                        demonstration shopping cart.
+                    </p>
+
+                </div>
+
+                <a href="index.html" class="button">
+                    <i class="fas fa-gift" aria-hidden="true"></i>
+                    Discover Welcome Offer
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Coffee subscriptions -->
+        <section class="section subscription-section" id="subscriptions">
+
+            <p class="small-title">YOUR COFFEE, YOUR WAY</p>
+
+            <h2>Choose Your Coffee Plan</h2>
+
+            <p class="section-intro">
+                Compare monthly coffee plans and select the option
+                that suits your brewing routine.
+            </p>
+
+            <div class="card-container subscription-container">
+
+                <article class="card subscription-card" data-plan-card="Student">
+
+                    <p class="small-title">STUDENT FAVOURITE</p>
+
+                    <h3>Student</h3>
+
+                    <p class="subscription-price">
+                        £12 <span>/ month</span>
+                    </p>
+
+                    <p>
+                        An affordable plan for students who want
+                        good coffee without a large commitment.
+                    </p>
+
+                    <ul>
+                        <li>One selected coffee</li>
+                        <li>200g coffee bag</li>
+                        <li>Monthly delivery</li>
+                        <li>Student-friendly price</li>
+                    </ul>
+
+                    <button type="button"
+                            class="button subscription-button"
+                            data-plan="Student"
+                            aria-pressed="false">
+
+                        Choose Student
+
+                    </button>
+
+                </article>
+
+
+                <article class="card subscription-card" data-plan-card="Essential">
+
+                    <p class="small-title">EVERYDAY COFFEE</p>
+
+                    <h3>Essential</h3>
+
+                    <p class="subscription-price">
+                        £18 <span>/ month</span>
+                    </p>
+
+                    <p>
+                        A simple monthly coffee delivery
+                        for your everyday brewing routine.
+                    </p>
+
+                    <ul>
+                        <li>One selected coffee</li>
+                        <li>250g coffee bag</li>
+                        <li>Monthly delivery</li>
+                        <li>Flexible cancellation</li>
+                    </ul>
+
+                    <button type="button"
+                            class="button subscription-button"
+                            data-plan="Essential"
+                            aria-pressed="false">
+
+                        Choose Essential
+
+                    </button>
+
+                </article>
+
+
+                <article class="card subscription-card featured-card"
+                         data-plan-card="Artisan">
+
+                    <p class="small-title">MOST POPULAR</p>
+
+                    <h3>Artisan</h3>
+
+                    <p class="subscription-price">
+                        £32 <span>/ month</span>
+                    </p>
+
+                    <p>
+                        Two coffees each month for people
+                        who enjoy discovering different flavours.
+                    </p>
+
+                    <ul>
+                        <li>Two selected coffees</li>
+                        <li>250g each</li>
+                        <li>Monthly delivery</li>
+                        <li>Early access to new blends</li>
+                    </ul>
+
+                    <button type="button"
+                            class="button subscription-button"
+                            data-plan="Artisan"
+                            aria-pressed="false">
+
+                        Choose Artisan
+
+                    </button>
+
+                </article>
+
+
+                <article class="card subscription-card" data-plan-card="Collector">
+
+                    <p class="small-title">PREMIUM EXPERIENCE</p>
+
+                    <h3>Collector</h3>
+
+                    <p class="subscription-price">
+                        £48 <span>/ month</span>
+                    </p>
+
+                    <p>
+                        A premium monthly experience
+                        for dedicated coffee enthusiasts.
+                    </p>
+
+                    <ul>
+                        <li>Three selected coffees</li>
+                        <li>250g each</li>
+                        <li>Free delivery</li>
+                        <li>Exclusive tasting invitations</li>
+                    </ul>
+
+                    <button type="button"
+                            class="button subscription-button"
+                            data-plan="Collector"
+                            aria-pressed="false">
+
+                        Choose Collector
+
+                    </button>
+
+                </article>
+
+            </div>
+
+            <p id="subscriptionMessage"
+               class="form-message"
+               role="status"
+               aria-live="polite">
+            </p>
+
+            <p class="section-intro">
+                Plan selection is a prototype feature.
+                No subscription or payment is created.
+            </p>
+
+        </section>
+
+
+        <!-- How it works -->
+        <section class="section offer-guide-section">
+
+            <p class="small-title">A SIMPLE WAY TO ENJOY COFFEE</p>
+
+            <h2>From Selection to Your Next Cup</h2>
+
+            <p class="section-intro">
+                Discover coffee and equipment in three simple steps.
+            </p>
+
+            <div class="card-container how-it-works-container">
+
+                <article class="card">
+
+                    <p class="small-title">STEP 01</p>
+
+                    <h3>Choose</h3>
+
+                    <p>
+                        Explore our coffees, brewing equipment,
+                        seasonal offers and subscription plans.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <p class="small-title">STEP 02</p>
+
+                    <h3>Select</h3>
+
+                    <p>
+                        Choose the items you like
+                        and add them to your basket.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <p class="small-title">STEP 03</p>
+
+                    <h3>Review</h3>
+
+                    <p>
+                        Check your quantities, apply an eligible
+                        welcome code and view your demonstration receipt.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html"
+                   class="footer-brand-link"
+                   aria-label="Bean Boutique home">
+
+                    <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                         alt="Bean Boutique logo"
+                         class="footer-brand-image"
+                         loading="lazy">
+
+                    <span class="footer-brand-name">
+                        <span class="footer-brand-main">BEAN</span>
+                        <span class="footer-brand-sub">BOUTIQUE</span>
+                    </span>
+
+                </a>
+
+                <p>Coffee, craft and community.</p>
+
+            </div>
+
+
+            <div class="footer-explore">
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="coffee.html">Coffee</a>
+
+                <a href="equipment.html">Equipment</a>
+
+                <a href="events.html">Events</a>
+
+                <a href="cart.html"
+                   class="footer-cart-link"
+                   aria-label="Shopping cart"
+                   title="Shopping cart">
+
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    hello@beanboutique.com
+                </p>
+
+                <p>
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    +95 9 000 000 000
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

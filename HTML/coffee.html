@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean Boutique | Coffee &amp; Desserts</title>
+    <meta name="description" content="Explore Bean Boutique coffee blends, single-origin beans, desserts and tasting pairings.">
+
+    <link rel="icon" type="image/png" href="../IMAGES/BEAN_BOUTIQUE_logo.png">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- AOS animation stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- MixItUp product filtering plugin -->
+    <script defer src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+
+    <!-- AOS animation library -->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Shared website JavaScript -->
+    <script defer src="../JS/script.js"></script>
+</head>
+
+<body class="coffee-page">
+
+    <!-- Navigation -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img
+                    src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                    alt="Bean Boutique brand logo."
+                    class="logo-image"
+                >
+
+                <span class="logo-name">
+                    <span class="logo-main">BEAN</span>
+                    <span class="logo-sub">BOUTIQUE</span>
+                </span>
+            </a>
+        </div>
+
+        <nav id="mainNavigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html" class="active" aria-current="page">Coffee</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html">Offers</a></li>
+
+                <li>
+                    <a href="cart.html" class="cart-link" aria-label="Shopping cart" title="Shopping cart">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-controls">
+
+            <button
+                type="button"
+                class="theme-button"
+                id="themeButton"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+
+            <button
+                type="button"
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <main id="mainContent">
+
+        <!-- Coffee page hero -->
+        <section class="page-hero cart-hero coffee-page-hero">
+
+            <img
+                src="../IMAGES/COFFEE_&_DESSERTS_HERO.png"
+                alt="Coffee and dessert hero photograph introducing the Bean Boutique menu."
+                class="cart-hero-image coffee-hero-image"
+                fetchpriority="high"
+            >
+
+            <div class="coffee-hero-content">
+                <p class="small-title">COFFEE &amp; DESSERTS</p>
+
+                <h1>Find Your Perfect Pairing</h1>
+
+                <p>
+                    Explore carefully selected coffees, handcrafted desserts
+                    and pairings designed for every kind of coffee moment.
+                </p>
+
+                <div class="button-group">
+                    <a href="#coffeeCatalogue" class="button">
+                        Explore the Menu
+                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#coffeePairings" class="button light-button">
+                        Find a Pairing
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="thadingyut-banner" aria-label="Thadingyut festival discount">
+
+            <div class="thadingyut-banner-icon">
+                <i class="fas fa-gift" aria-hidden="true"></i>
+            </div>
+
+            <div class="thadingyut-banner-copy">
+                <p class="small-title">A FESTIVE THANK-YOU</p>
+
+                <h2>Celebrate Thadingyut with 10% Off</h2>
+
+                <p>
+                    Enjoy 10% off all 12 coffees and 12 desserts from
+                    <strong>25–27 October 2026</strong>.
+                    The crossed-out price is the regular price, and the
+                    lower price is the promotional price.
+                </p>
+            </div>
+
+            <span class="thadingyut-banner-badge">
+                10% OFF
+                <small>ALL 24 ITEMS</small>
+            </span>
+
+        </section>
+
+        <!-- Featured products -->
+        <section class="section coffee-discovery-section" id="coffeeDiscovery">
+
+            <div class="coffee-discovery-heading">
+                <p class="small-title">A GOOD PLACE TO START</p>
+                <h2>Signature &amp; Popular Picks</h2>
+
+                <p class="section-intro">
+                    Discover three coffees and three sweet favourites
+                    selected to help you find your next café moment.
+                </p>
+            </div>
+
+            <div class="featured-picks-grid">
+
+                <article class="featured-pick-card">
+
+                    <div class="featured-pick-topline">
+                        <span class="featured-pick-icon">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                        </span>
+                        <span class="product-badge">SIGNATURE BLEND</span>
+                    </div>
+
+                    <img
+                        src="../IMAGES/GOLDEN_ORCHARD.png"
+                        alt="Golden Orchard medium-roast coffee product image."
+                        class="featured-pick-image"
+                        loading="lazy"
+                    >
+
+                    <p class="small-title">SMOOTH &amp; BALANCED</p>
+                    <h3>Golden Orchard</h3>
+
+                    <p>
+                        Caramel, citrus and roasted nuts.
+                        A versatile choice for a relaxed everyday cup.
+                    </p>
+
+                    <div class="featured-metrics product-metrics">
+
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+
+                        <p class="profile-rating-heading">
+                            <span>Intensity rating</span>
+                            <strong>3/5</strong>
+                        </p>
+
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 3 out of 5">
+                            <span class="rating-fill level-3"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="featured-pick-bottom featured-price-row">
+                        <span class="featured-price-stack">
+                            <del class="original-price">£12.50</del>
+                            <strong class="discount-price">£11.25</strong>
+                            <span class="price-unit">/ 250g</span>
+                        </span>
+
+                        <a href="#goldenOrchard" class="pick-link">
+                            View item
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="featured-pick-card">
+
+                    <div class="featured-pick-topline">
+                        <span class="featured-pick-icon">
+                            <i class="fas fa-fire-alt" aria-hidden="true"></i>
+                        </span>
+                        <span class="product-badge">POPULAR PICK</span>
+                    </div>
+
+                    <img
+                        src="../IMAGES/FOREST_EMBER.png"
+                        alt="Forest Ember dark-roast coffee product image."
+                        class="featured-pick-image"
+                        loading="lazy"
+                    >
+
+                    <p class="small-title">RICH &amp; BOLD</p>
+                    <h3>Forest Ember</h3>
+
+                    <p>
+                        Dark chocolate, brown sugar and warm spice
+                        for those who enjoy a deeper roast.
+                    </p>
+
+                    <div class="featured-metrics product-metrics">
+
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+
+                            <span class="sample-stars" role="img" aria-label="Rating 4.9 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+
+                            <strong class="sample-rating-score">4.9/5</strong>
+                        </p>
+
+                        <p class="profile-rating-heading">
+                            <span>Intensity rating</span>
+                            <strong>5/5</strong>
+                        </p>
+
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 5 out of 5">
+                            <span class="rating-fill level-5"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="featured-pick-bottom featured-price-row">
+                        <span class="featured-price-stack">
+                            <del class="original-price">£13.50</del>
+                            <strong class="discount-price">£12.15</strong>
+                            <span class="price-unit">/ 250g</span>
+                        </span>
+
+                        <a href="#forestEmber" class="pick-link">
+                            View item
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="featured-pick-card">
+
+                    <div class="featured-pick-topline">
+                        <span class="featured-pick-icon">
+                            <i class="fas fa-leaf" aria-hidden="true"></i>
+                        </span>
+                        <span class="product-badge">MYANMAR ORIGIN</span>
+                    </div>
+
+                    <img
+                        src="../IMAGES/SHAN_HIGHLAND.png"
+                        alt="Shan Highland coffee product image representing coffee from Myanmar's Shan State."
+                        class="featured-pick-image"
+                        loading="lazy"
+                    >
+
+                    <p class="small-title">LOCAL &amp; COMFORTING</p>
+                    <h3>Shan Highland</h3>
+
+                    <p>
+                        Honey sweetness, almond and cocoa
+                        from Myanmar's Shan State.
+                    </p>
+
+                    <div class="featured-metrics product-metrics">
+
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+
+                        <p class="profile-rating-heading">
+                            <span>Intensity rating</span>
+                            <strong>3/5</strong>
+                        </p>
+
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 3 out of 5">
+                            <span class="rating-fill level-3"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="featured-pick-bottom featured-price-row">
+                        <span class="featured-price-stack">
+                            <del class="original-price">£15.00</del>
+                            <strong class="discount-price">£13.50</strong>
+                            <span class="price-unit">/ 250g</span>
+                        </span>
+
+                        <a href="#shanHighland" class="pick-link">
+                            View item
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="featured-pick-card">
+
+                    <div class="featured-pick-topline">
+                        <span class="featured-pick-icon">
+                            <i class="fas fa-cookie-bite" aria-hidden="true"></i>
+                        </span>
+                        <span class="product-badge">DESSERT FAVOURITE</span>
+                    </div>
+
+                    <img
+                        src="../IMAGES/BURNT_BASQUE_CHEESECAKE.png"
+                        alt="Burnt Basque cheesecake product image showing the caramelised cheesecake dessert."
+                        class="featured-pick-image"
+                        loading="lazy"
+                    >
+
+                    <p class="small-title">CREAMY &amp; CARAMELISED</p>
+                    <h3>Burnt Basque Cheesecake</h3>
+
+                    <p>
+                        Creamy vanilla cheesecake with a deeply
+                        caramelised top and soft centre.
+                    </p>
+
+                    <div class="featured-metrics product-metrics">
+
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+
+                        <p class="profile-rating-heading">
+                            <span>Creaminess rating</span>
+                            <strong>5/5</strong>
+                        </p>
+
+                        <div class="profile-rating-track" role="img" aria-label="Creaminess rating: 5 out of 5">
+                            <span class="rating-fill level-5"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="featured-pick-bottom featured-price-row">
+                        <span class="featured-price-stack">
+                            <del class="original-price">£6.50</del>
+                            <strong class="discount-price">£5.85</strong>
+                            <span class="price-unit">/ serving</span>
+                        </span>
+
+                        <a href="#burntBasqueCheesecake" class="pick-link">
+                            View item
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="featured-pick-card">
+
+                    <div class="featured-pick-topline">
+                        <span class="featured-pick-icon">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                        </span>
+                        <span class="product-badge">SWEET &amp; RICH</span>
+                    </div>
+
+                    <img
+                        src="../IMAGES/CARAMEL_PECAN_BROWNIE.png"
+                        alt="Caramel pecan brownie product image showing a rich chocolate dessert with pecans."
+                        class="featured-pick-image"
+                        loading="lazy"
+                    >
+
+                    <p class="small-title">CHOCOLATE &amp; CARAMEL</p>
+                    <h3>Caramel Pecan Brownie</h3>
+
+                    <p>
+                        A rich chocolate brownie topped with
+                        toasted pecans and soft caramel.
+                    </p>
+
+                    <div class="featured-metrics product-metrics">
+
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+
+                            <span class="sample-stars" role="img" aria-label="Rating 4.9 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+
+                            <strong class="sample-rating-score">4.9/5</strong>
+                        </p>
+
+                        <p class="profile-rating-heading">
+                            <span>Chocolate richness</span>
+                            <strong>5/5</strong>
+                        </p>
+
+                        <div class="profile-rating-track" role="img" aria-label="Chocolate richness rating: 5 out of 5">
+                            <span class="rating-fill level-5"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="featured-pick-bottom featured-price-row">
+                        <span class="featured-price-stack">
+                            <del class="original-price">£5.75</del>
+                            <strong class="discount-price">£5.18</strong>
+                            <span class="price-unit">/ serving</span>
+                        </span>
+
+                        <a href="#caramelPecanBrownie" class="pick-link">
+                            View item
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="featured-pick-card">
+
+                    <div class="featured-pick-topline">
+                        <span class="featured-pick-icon">
+                            <i class="fas fa-seedling" aria-hidden="true"></i>
+                        </span>
+                        <span class="product-badge">MYANMAR-INSPIRED</span>
+                    </div>
+
+                    <img
+                        src="../IMAGES/COCONUT_JAGGERY_PUDDING.png"
+                        alt="Coconut jaggery pudding product image representing a coconut-based dessert sweetened with jaggery."
+                        class="featured-pick-image"
+                        loading="lazy"
+                    >
+
+                    <p class="small-title">COCONUT &amp; JAGGERY</p>
+                    <h3>Coconut Jaggery Pudding</h3>
+
+                    <p>
+                        Silky coconut pudding gently sweetened
+                        with caramel-like jaggery.
+                    </p>
+
+                    <div class="featured-metrics product-metrics">
+
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+
+                        <p class="profile-rating-heading">
+                            <span>Coconut flavour rating</span>
+                            <strong>4/5</strong>
+                        </p>
+
+                        <div class="profile-rating-track" role="img" aria-label="Coconut flavour rating: 4 out of 5">
+                            <span class="rating-fill level-4"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="featured-pick-bottom featured-price-row">
+                        <span class="featured-price-stack">
+                            <del class="original-price">£5.50</del>
+                            <strong class="discount-price">£4.95</strong>
+                            <span class="price-unit">/ serving</span>
+                        </span>
+
+                        <a href="#coconutJaggeryPudding" class="pick-link">
+                            View item
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="quick-menu-panel">
+
+                <div class="quick-menu-heading">
+                    <div>
+                        <p class="small-title">KNOW WHAT'S ON THE MENU</p>
+                        <h2>Browse All 24 Items</h2>
+                    </div>
+
+                    <span class="quick-menu-count">
+                        12 coffees <i class="fas fa-circle" aria-hidden="true"></i> 12 desserts
+                    </span>
+                </div>
+
+                <details class="full-menu-dropdown">
+                    <summary>
+                        <span>
+                            <i class="fas fa-list-ul" aria-hidden="true"></i>
+                            View all coffee and dessert names
+                        </span>
+
+                        <i class="fas fa-chevron-down dropdown-chevron" aria-hidden="true"></i>
+                    </summary>
+
+                    <div class="quick-menu-grid full-menu-grid">
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SIGNATURE BLEND · MEDIUM ROAST</span>
+                                <h3><a href="#goldenOrchard">Golden Orchard</a></h3>
+                                <p>Caramel, citrus and roasted nuts</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£12.50</del><strong>£11.25</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SINGLE ORIGIN · LIGHT ROAST</span>
+                                <h3><a href="#ethiopiaBloom">Ethiopia Bloom</a></h3>
+                                <p>Floral, berry and bright citrus</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£14.00</del><strong>£12.60</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">BLEND · DARK ROAST</span>
+                                <h3><a href="#forestEmber">Forest Ember</a></h3>
+                                <p>Dark chocolate, brown sugar and warm spice</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£13.50</del><strong>£12.15</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">MYANMAR · MEDIUM ROAST</span>
+                                <h3><a href="#shanHighland">Shan Highland</a></h3>
+                                <p>Honey, almond and cocoa</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£15.00</del><strong>£13.50</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SINGLE ORIGIN · LIGHT ROAST</span>
+                                <h3><a href="#colombiaVelvet">Colombia Velvet</a></h3>
+                                <p>Red apple, caramel and soft plum</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£13.75</del><strong>£12.38</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">BLEND · DARK ROAST</span>
+                                <h3><a href="#midnightHouse">Midnight House</a></h3>
+                                <p>Cocoa, molasses and smoky notes</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£12.00</del><strong>£10.80</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SINGLE ORIGIN · MEDIUM ROAST</span>
+                                <h3><a href="#brazilAmber">Brazil Amber</a></h3>
+                                <p>Hazelnut, milk chocolate and caramel</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£12.75</del><strong>£11.48</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">BLEND · LIGHT ROAST</span>
+                                <h3><a href="#morningGarden">Morning Garden</a></h3>
+                                <p>Honey, orange peel and sweet almond</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£13.25</del><strong>£11.93</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SINGLE ORIGIN · DARK ROAST</span>
+                                <h3><a href="#sumatraDark">Sumatra Dark</a></h3>
+                                <p>Dark cacao, earthy spice and cedar</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£14.25</del><strong>£12.83</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">BLEND · MEDIUM ROAST</span>
+                                <h3><a href="#houseClassic">House Classic</a></h3>
+                                <p>Caramel, biscuit and roasted almond · 500g</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£19.50</del><strong>£17.55</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SINGLE ORIGIN · LIGHT ROAST</span>
+                                <h3><a href="#guatemalaSunrise">Guatemala Sunrise</a></h3>
+                                <p>Orange, cocoa and gentle honey sweetness</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£14.50</del><strong>£13.05</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">BLEND · DARK ROAST</span>
+                                <h3><a href="#velvetNight">Velvet Night</a></h3>
+                                <p>Dark chocolate, toasted pecan and brown sugar · 500g</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£20.00</del><strong>£18.00</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">DESSERT · ONE SLICE</span>
+                                <h3><a href="#burntBasqueCheesecake">Burnt Basque Cheesecake</a></h3>
+                                <p>Vanilla cream and a caramelised top</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£6.50</del><strong>£5.85</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">DESSERT · ONE SLICE</span>
+                                <h3><a href="#chocolateOrangeTart">Chocolate Orange Tart</a></h3>
+                                <p>Dark chocolate and bright orange zest</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£7.00</del><strong>£6.30</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">DESSERT · ONE SLICE</span>
+                                <h3><a href="#matchaCoconutCake">Matcha Coconut Cake</a></h3>
+                                <p>Matcha sponge and light coconut cream</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£6.25</del><strong>£5.63</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">DESSERT · ONE PIECE</span>
+                                <h3><a href="#caramelPecanBrownie">Caramel Pecan Brownie</a></h3>
+                                <p>Chocolate, toasted pecans and caramel</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£5.75</del><strong>£5.18</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">MYANMAR-INSPIRED DESSERT</span>
+                                <h3><a href="#coconutJaggeryPudding">Coconut Jaggery Pudding</a></h3>
+                                <p>Coconut with caramel-like jaggery</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£5.50</del><strong>£4.95</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">DESSERT · ONE PORTION</span>
+                                <h3><a href="#coffeeTiramisu">Coffee Tiramisu</a></h3>
+                                <p>Coffee-soaked sponge, mascarpone and cocoa</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£7.25</del><strong>£6.53</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SPECIALTY DESSERT · ONE PIECE</span>
+                                <h3><a href="#blackSesameMochiCake">Black Sesame Mochi Cake</a></h3>
+                                <p>Toasted black sesame with a lightly chewy texture</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£6.00</del><strong>£5.40</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">DESSERT · ONE SLICE</span>
+                                <h3><a href="#pandanCreamRoll">Pandan Cream Roll</a></h3>
+                                <p>Pandan sponge and lightly sweetened cream</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£5.95</del><strong>£5.36</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">DESSERT · ONE SLICE</span>
+                                <h3><a href="#honeyAlmondTart">Honey Almond Tart</a></h3>
+                                <p>Almond cream and delicate honey</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£6.75</del><strong>£6.08</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">CHILLED DESSERT · ONE GLASS</span>
+                                <h3><a href="#mangoCoconutPannaCotta">Mango Coconut Panna Cotta</a></h3>
+                                <p>Coconut panna cotta and mango compote</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£6.50</del><strong>£5.85</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">WARM DESSERT · ONE PORTION</span>
+                                <h3><a href="#cinnamonAppleCrumble">Cinnamon Apple Crumble</a></h3>
+                                <p>Warm cinnamon apples and crisp oat topping</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£6.25</del><strong>£5.63</strong></span>
+                        </div>
+
+                        <div class="quick-menu-item">
+                            <div class="quick-menu-copy">
+                                <span class="quick-menu-category">SEASONAL DESSERT · ONE PORTION</span>
+                                <h3><a href="#coconutStickyRiceMango">Coconut Sticky Rice &amp; Mango</a></h3>
+                                <p>Coconut sticky rice and sweet ripe mango</p>
+                            </div>
+                            <span class="quick-menu-prices"><del>£6.75</del><strong>£6.08</strong></span>
+                        </div>
+
+                    </div>
+                </details>
+
+                <p class="quick-menu-note">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    Thadingyut promotional prices are intended for
+                    25–27 October 2026. Search the catalogue below
+                    for product details.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Search and product catalogue -->
+        <section class="section coffee-menu-section" id="coffeeMenu">
+
+            <p class="small-title">THE MENU</p>
+            <h2>Explore the Collection</h2>
+
+            <p class="section-intro">
+                Search by product name, flavour, origin, roast or dessert
+                to find something that suits your mood.
+            </p>
+
+            <label for="coffeeSearch" class="sr-only">
+                Search coffee and desserts
+            </label>
+
+            <input
+                type="search"
+                id="coffeeSearch"
+                class="search-input"
+                placeholder="Search coffee or dessert..."
+                autocomplete="off"
+            >
+
+            <p id="searchHint" role="status" aria-live="polite">
+                Start typing to search.
+            </p>
+
+            <div class="filter-buttons" role="group" aria-label="Filter coffee and desserts">
+                <button type="button" data-filter="all" class="active" aria-pressed="true" aria-controls="coffeeCatalogue">All</button>
+                <button type="button" data-filter=".blend" aria-pressed="false" aria-controls="coffeeCatalogue">Blends</button>
+                <button type="button" data-filter=".single-origin" aria-pressed="false" aria-controls="coffeeCatalogue">Single Origin</button>
+                <button type="button" data-filter=".light-roast" aria-pressed="false" aria-controls="coffeeCatalogue">Light Roast</button>
+                <button type="button" data-filter=".dark-roast" aria-pressed="false" aria-controls="coffeeCatalogue">Dark Roast</button>
+                <button type="button" data-filter=".dessert" aria-pressed="false" aria-controls="coffeeCatalogue">Desserts</button>
+            </div>
+
+            <div id="coffeeCatalogue" class="card-container coffee-catalogue">
+
+                <article id="goldenOrchard" class="card coffee-card mix blend medium-roast"
+                    data-search="golden orchard caramel citrus roasted nuts blend medium roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/GOLDEN_ORCHARD.png"
+                        alt="Golden Orchard medium-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">BLEND</p>
+                    <h3>Golden Orchard</h3>
+                    <p>Caramel, citrus and roasted nuts with a smooth and balanced finish.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>3/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 3 out of 5"><span class="rating-fill level-3"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Medium</p>
+                    <p><strong>Origin:</strong> Brazil &amp; Ethiopia</p>
+                    <p><strong>Process:</strong> Washed &amp; Natural</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Pour over, French press</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£12.50</del><strong class="discount-price">£11.25</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Golden Orchard" data-price="11.25">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="ethiopiaBloom" class="card coffee-card mix single-origin light-roast"
+                    data-search="ethiopia bloom floral berry citrus single origin light roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/ETHIOPIA_BLOOM.png"
+                        alt="Ethiopia Bloom light-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SINGLE ORIGIN</p>
+                    <h3>Ethiopia Bloom</h3>
+                    <p>Floral, berry and bright citrus notes with a light and elegant finish.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>2/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 2 out of 5"><span class="rating-fill level-2"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Light</p>
+                    <p><strong>Origin:</strong> Ethiopia</p>
+                    <p><strong>Process:</strong> Washed</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Pour over</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£14.00</del><strong class="discount-price">£12.60</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Ethiopia Bloom" data-price="12.60">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="forestEmber" class="card coffee-card mix blend dark-roast"
+                    data-search="forest ember dark chocolate brown sugar warm spice blend dark roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/FOREST_EMBER.png"
+                        alt="Forest Ember dark-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">BLEND</p>
+                    <h3>Forest Ember</h3>
+                    <p>Dark chocolate, brown sugar and warm spice with a deep roasted finish.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.9 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.9/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>5/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 5 out of 5"><span class="rating-fill level-5"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Dark</p>
+                    <p><strong>Origin:</strong> Brazil &amp; Colombia</p>
+                    <p><strong>Process:</strong> Natural</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Espresso, French press</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£13.50</del><strong class="discount-price">£12.15</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Forest Ember" data-price="12.15">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="shanHighland" class="card coffee-card mix single-origin medium-roast"
+                    data-search="shan highland honey almond cocoa single origin medium roast myanmar coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/SHAN_HIGHLAND.png"
+                        alt="Shan Highland coffee product image representing coffee from Myanmar's Shan State."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SINGLE ORIGIN</p>
+                    <h3>Shan Highland</h3>
+                    <p>Honey sweetness, almond and cocoa with a gentle, rounded body.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>3/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 3 out of 5"><span class="rating-fill level-3"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Medium</p>
+                    <p><strong>Origin:</strong> Myanmar, Shan State</p>
+                    <p><strong>Process:</strong> Washed</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> French press, pour over</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£15.00</del><strong class="discount-price">£13.50</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Shan Highland" data-price="13.50">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="colombiaVelvet" class="card coffee-card mix single-origin light-roast"
+                    data-search="colombia velvet plum caramel red apple single origin light roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/COLOMBIA_VELVET.png"
+                        alt="Colombia Velvet light-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SINGLE ORIGIN</p>
+                    <h3>Colombia Velvet</h3>
+                    <p>Red apple, caramel and soft plum with a silky finish.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.6 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.6/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>2/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 2 out of 5"><span class="rating-fill level-2"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Light</p>
+                    <p><strong>Origin:</strong> Colombia</p>
+                    <p><strong>Process:</strong> Washed</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Pour over</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£13.75</del><strong class="discount-price">£12.38</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Colombia Velvet" data-price="12.38">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="midnightHouse" class="card coffee-card mix blend dark-roast"
+                    data-search="midnight house smoky cocoa molasses blend dark roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/MIDNIGHT_HOUSE.png"
+                        alt="Midnight House dark-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">BLEND</p>
+                    <h3>Midnight House</h3>
+                    <p>Cocoa, molasses and a rich smoky finish made for bold coffee moments.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>5/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 5 out of 5"><span class="rating-fill level-5"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Dark</p>
+                    <p><strong>Origin:</strong> Brazil &amp; India</p>
+                    <p><strong>Process:</strong> Natural</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Espresso</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£12.00</del><strong class="discount-price">£10.80</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Midnight House" data-price="10.80">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="brazilAmber" class="card coffee-card mix single-origin medium-roast"
+                    data-search="brazil amber hazelnut milk chocolate caramel single origin medium roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/BRAZIL_AMBER.png"
+                        alt="Brazil Amber medium-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SINGLE ORIGIN</p>
+                    <h3>Brazil Amber</h3>
+                    <p>Hazelnut, milk chocolate and caramel with a comforting sweetness.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>3/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 3 out of 5"><span class="rating-fill level-3"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Medium</p>
+                    <p><strong>Origin:</strong> Brazil</p>
+                    <p><strong>Process:</strong> Natural</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Espresso, French press</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£12.75</del><strong class="discount-price">£11.48</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Brazil Amber" data-price="11.48">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="morningGarden" class="card coffee-card mix blend light-roast"
+                    data-search="morning garden honey orange almond blend light roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/MORNING_GARDEN.png"
+                        alt="Morning Garden light-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">BLEND</p>
+                    <h3>Morning Garden</h3>
+                    <p>Honey, orange peel and sweet almond with a bright morning profile.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.6 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.6/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>2/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 2 out of 5"><span class="rating-fill level-2"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Light</p>
+                    <p><strong>Origin:</strong> Ethiopia &amp; Guatemala</p>
+                    <p><strong>Process:</strong> Washed</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Pour over</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£13.25</del><strong class="discount-price">£11.93</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Morning Garden" data-price="11.93">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="sumatraDark" class="card coffee-card mix single-origin dark-roast"
+                    data-search="sumatra dark cacao earthy spice cedar single origin dark roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/SUMATRA_DARK.png"
+                        alt="Sumatra Dark single-origin dark-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SINGLE ORIGIN</p>
+                    <h3>Sumatra Dark</h3>
+                    <p>Dark cacao, earthy spice and cedar with a deep and rich body.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>5/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 5 out of 5"><span class="rating-fill level-5"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Dark</p>
+                    <p><strong>Origin:</strong> Sumatra, Indonesia</p>
+                    <p><strong>Process:</strong> Wet hulled</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> French press</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£14.25</del><strong class="discount-price">£12.83</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Sumatra Dark" data-price="12.83">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="houseClassic" class="card coffee-card mix blend medium-roast"
+                    data-search="house classic caramel biscuit almond blend medium roast coffee 500g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/HOUSE_CLASSIC.png"
+                        alt="House Classic medium-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">BLEND</p>
+                    <h3>House Classic</h3>
+                    <p>Caramel, biscuit and roasted almond in a familiar everyday blend.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.5 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.5/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>3/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 3 out of 5"><span class="rating-fill level-3"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Medium</p>
+                    <p><strong>Origin:</strong> Brazil &amp; Colombia</p>
+                    <p><strong>Process:</strong> Washed &amp; Natural</p>
+                    <p><strong>Weight:</strong> 500g</p>
+                    <p><strong>Best for:</strong> Espresso, moka pot</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£19.50</del><strong class="discount-price">£17.55</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="House Classic" data-price="17.55">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="guatemalaSunrise" class="card coffee-card mix single-origin light-roast"
+                    data-search="guatemala sunrise orange cocoa honey single origin light roast coffee 250g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/GUATEMALA_SUNRISE.png"
+                        alt="Guatemala Sunrise light-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SINGLE ORIGIN</p>
+                    <h3>Guatemala Sunrise</h3>
+                    <p>Orange, cocoa and gentle honey sweetness with a clean finish.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.6 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.6/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>2/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 2 out of 5"><span class="rating-fill level-2"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Light</p>
+                    <p><strong>Origin:</strong> Guatemala</p>
+                    <p><strong>Process:</strong> Washed</p>
+                    <p><strong>Weight:</strong> 250g</p>
+                    <p><strong>Best for:</strong> Pour over</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£14.50</del><strong class="discount-price">£13.05</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Guatemala Sunrise" data-price="13.05">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="velvetNight" class="card coffee-card mix blend dark-roast"
+                    data-search="velvet night dark chocolate toasted pecan brown sugar blend dark roast coffee 500g"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/VELVET_NIGHT.png"
+                        alt="Velvet Night dark-roast coffee product image."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">BLEND</p>
+                    <h3>Velvet Night</h3>
+                    <p>Dark chocolate, toasted pecan and brown sugar with a luxurious finish.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.9 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.9/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Intensity rating</span><strong>5/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Intensity rating: 5 out of 5"><span class="rating-fill level-5"></span></div>
+                    </div>
+
+                    <p><strong>Roast:</strong> Dark</p>
+                    <p><strong>Origin:</strong> Brazil &amp; Guatemala</p>
+                    <p><strong>Process:</strong> Natural</p>
+                    <p><strong>Weight:</strong> 500g</p>
+                    <p><strong>Best for:</strong> Espresso, French press</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£20.00</del><strong class="discount-price">£18.00</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Velvet Night" data-price="18.00">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="burntBasqueCheesecake" class="card coffee-card mix dessert"
+                    data-search="burnt basque cheesecake vanilla cream caramelised top dessert cake pairing"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/BURNT_BASQUE_CHEESECAKE.png"
+                        alt="Burnt Basque cheesecake dessert with a caramelised top."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Burnt Basque Cheesecake</h3>
+                    <p>Creamy vanilla cheesecake with a deeply caramelised top and soft centre.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Creaminess rating</span><strong>5/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Creaminess rating: 5 out of 5"><span class="rating-fill level-5"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Baked cheesecake</p>
+                    <p><strong>Serving:</strong> 1 slice</p>
+                    <p><strong>Flavour:</strong> Vanilla &amp; caramel</p>
+                    <p><strong>Best with:</strong> House Classic</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£6.50</del><strong class="discount-price">£5.85</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Burnt Basque Cheesecake" data-price="5.85">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="chocolateOrangeTart" class="card coffee-card mix dessert"
+                    data-search="chocolate orange tart dark chocolate orange zest dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/CHOCOLATE_ORANGE_TART.png"
+                        alt="Chocolate orange tart dessert with dark chocolate filling and orange zest."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Chocolate Orange Tart</h3>
+                    <p>Rich dark chocolate filling finished with bright orange zest.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Chocolate flavour rating</span><strong>5/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Chocolate flavour rating: 5 out of 5"><span class="rating-fill level-5"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Chocolate tart</p>
+                    <p><strong>Serving:</strong> 1 slice</p>
+                    <p><strong>Flavour:</strong> Cocoa &amp; orange</p>
+                    <p><strong>Best with:</strong> Forest Ember</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£7.00</del><strong class="discount-price">£6.30</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Chocolate Orange Tart" data-price="6.30">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="matchaCoconutCake" class="card coffee-card mix dessert"
+                    data-search="matcha coconut cake green tea coconut dessert cake pairing"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/MATCHA_COCONUT_CAKE.png"
+                        alt="Matcha coconut cake dessert with green tea sponge and coconut cream."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Matcha Coconut Cake</h3>
+                    <p>Soft matcha sponge layered with light coconut cream for a delicate finish.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.6 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.6/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Matcha flavour rating</span><strong>3/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Matcha flavour rating: 3 out of 5"><span class="rating-fill level-3"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Layer cake</p>
+                    <p><strong>Serving:</strong> 1 slice</p>
+                    <p><strong>Flavour:</strong> Matcha &amp; coconut</p>
+                    <p><strong>Best with:</strong> Ethiopia Bloom</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£6.25</del><strong class="discount-price">£5.63</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Matcha Coconut Cake" data-price="5.63">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="caramelPecanBrownie" class="card coffee-card mix dessert"
+                    data-search="caramel pecan brownie chocolate caramel nuts dessert brownie"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/CARAMEL_PECAN_BROWNIE.png"
+                        alt="Caramel pecan brownie dessert with chocolate, pecans and caramel."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Caramel Pecan Brownie</h3>
+                    <p>A rich chocolate brownie topped with toasted pecans and soft caramel.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.9 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.9/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Chocolate richness</span><strong>5/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Chocolate richness rating: 5 out of 5"><span class="rating-fill level-5"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Brownie</p>
+                    <p><strong>Serving:</strong> 1 piece</p>
+                    <p><strong>Flavour:</strong> Chocolate &amp; pecan</p>
+                    <p><strong>Best with:</strong> Midnight House</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£5.75</del><strong class="discount-price">£5.18</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Caramel Pecan Brownie" data-price="5.18">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="coconutJaggeryPudding" class="card coffee-card mix dessert"
+                    data-search="coconut jaggery pudding coconut palm sugar myanmar dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/COCONUT_JAGGERY_PUDDING.png"
+                        alt="Coconut jaggery pudding dessert with coconut and caramel-like jaggery sweetness."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">MYANMAR-INSPIRED DESSERT</p>
+                    <h3>Coconut Jaggery Pudding</h3>
+                    <p>Silky coconut pudding gently sweetened with caramel-like jaggery.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Coconut flavour rating</span><strong>4/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Coconut flavour rating: 4 out of 5"><span class="rating-fill level-4"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Coconut pudding</p>
+                    <p><strong>Serving:</strong> 1 cup</p>
+                    <p><strong>Flavour:</strong> Coconut &amp; jaggery</p>
+                    <p><strong>Best with:</strong> Shan Highland</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£5.50</del><strong class="discount-price">£4.95</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Coconut Jaggery Pudding" data-price="4.95">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="coffeeTiramisu" class="card coffee-card mix dessert"
+                    data-search="coffee tiramisu mascarpone cocoa espresso dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/COFFEE_TIRAMISU.png"
+                        alt="Coffee tiramisu dessert with coffee-soaked sponge, mascarpone cream and cocoa."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Coffee Tiramisu</h3>
+                    <p>Coffee-soaked sponge layered with mascarpone cream and cocoa.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Coffee flavour rating</span><strong>4/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Coffee flavour rating: 4 out of 5"><span class="rating-fill level-4"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Layered dessert</p>
+                    <p><strong>Serving:</strong> 1 portion</p>
+                    <p><strong>Flavour:</strong> Coffee &amp; cocoa</p>
+                    <p><strong>Best with:</strong> Brazil Amber</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£7.25</del><strong class="discount-price">£6.53</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Coffee Tiramisu" data-price="6.53">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="blackSesameMochiCake" class="card coffee-card mix dessert"
+                    data-search="black sesame mochi cake sesame rice flour dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/BLACK_SESAME_MOCHI_CAKE.png"
+                        alt="Black sesame mochi cake dessert with toasted black sesame and a soft, chewy texture."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SPECIALTY DESSERT</p>
+                    <h3>Black Sesame Mochi Cake</h3>
+                    <p>Soft, lightly chewy cake with toasted black sesame and a subtle sweetness.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.6 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.6/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Black sesame flavour</span><strong>4/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Black sesame flavour rating: 4 out of 5"><span class="rating-fill level-4"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Mochi cake</p>
+                    <p><strong>Serving:</strong> 1 piece</p>
+                    <p><strong>Flavour:</strong> Black sesame</p>
+                    <p><strong>Best with:</strong> Morning Garden</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£6.00</del><strong class="discount-price">£5.40</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Black Sesame Mochi Cake" data-price="5.40">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="pandanCreamRoll" class="card coffee-card mix dessert"
+                    data-search="pandan cream roll pandan coconut dessert swiss roll"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/PANDAN_CREAM_ROLL.png"
+                        alt="Pandan cream roll dessert with green pandan sponge and lightly sweetened cream."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Pandan Cream Roll</h3>
+                    <p>Soft pandan sponge wrapped around lightly sweetened cream.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.5 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.5/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Pandan flavour rating</span><strong>3/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Pandan flavour rating: 3 out of 5"><span class="rating-fill level-3"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Swiss roll</p>
+                    <p><strong>Serving:</strong> 1 slice</p>
+                    <p><strong>Flavour:</strong> Pandan &amp; cream</p>
+                    <p><strong>Best with:</strong> Golden Orchard</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£5.95</del><strong class="discount-price">£5.36</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Pandan Cream Roll" data-price="5.36">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="honeyAlmondTart" class="card coffee-card mix dessert"
+                    data-search="honey almond tart almond cream honey pastry dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/HONEY_ALMOND_TART.png"
+                        alt="Honey almond tart dessert with buttery pastry, almond cream and honey."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Honey Almond Tart</h3>
+                    <p>Buttery pastry filled with almond cream and finished with delicate honey.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.6 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.6/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Almond flavour rating</span><strong>4/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Almond flavour rating: 4 out of 5"><span class="rating-fill level-4"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Almond tart</p>
+                    <p><strong>Serving:</strong> 1 slice</p>
+                    <p><strong>Flavour:</strong> Almond &amp; honey</p>
+                    <p><strong>Best with:</strong> Colombia Velvet</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£6.75</del><strong class="discount-price">£6.08</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Honey Almond Tart" data-price="6.08">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="mangoCoconutPannaCotta" class="card coffee-card mix dessert"
+                    data-search="mango coconut panna cotta tropical mango dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/MANGO_COCONUT_PANNA_COTTA.png"
+                        alt="Mango coconut panna cotta dessert with creamy coconut and mango compote."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">DESSERT</p>
+                    <h3>Mango Coconut Panna Cotta</h3>
+                    <p>Light coconut panna cotta topped with fresh mango compote.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Fruitiness rating</span><strong>4/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Fruitiness rating: 4 out of 5"><span class="rating-fill level-4"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Chilled dessert</p>
+                    <p><strong>Serving:</strong> 1 glass</p>
+                    <p><strong>Flavour:</strong> Mango &amp; coconut</p>
+                    <p><strong>Best with:</strong> Ethiopia Bloom</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£6.50</del><strong class="discount-price">£5.85</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Mango Coconut Panna Cotta" data-price="5.85">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="cinnamonAppleCrumble" class="card coffee-card mix dessert"
+                    data-search="cinnamon apple crumble warm apple cinnamon dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/CINNAMON_APPLE_CRUMBLE.png"
+                        alt="Cinnamon apple crumble dessert with warm apples and a crisp golden oat topping."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">WARM DESSERT</p>
+                    <h3>Cinnamon Apple Crumble</h3>
+                    <p>Warm cinnamon apples beneath a crisp golden oat topping.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.8 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.8/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Spice flavour rating</span><strong>4/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Spice flavour rating: 4 out of 5"><span class="rating-fill level-4"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Fruit crumble</p>
+                    <p><strong>Serving:</strong> 1 portion</p>
+                    <p><strong>Flavour:</strong> Apple &amp; cinnamon</p>
+                    <p><strong>Best with:</strong> Golden Orchard</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£6.25</del><strong class="discount-price">£5.63</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Cinnamon Apple Crumble" data-price="5.63">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+                <article id="coconutStickyRiceMango" class="card coffee-card mix dessert"
+                    data-search="coconut sticky rice mango sticky rice dessert"
+                    data-aos="fade-up">
+
+                    <img src="../IMAGES/COCONUT_STICKY_RICE_AND_MANGO.png"
+                        alt="Coconut sticky rice and mango dessert with sweet ripe mango and coconut rice."
+                        class="coffee-product-image" loading="lazy">
+
+                    <p class="small-title">SEASONAL DESSERT</p>
+                    <h3>Coconut Sticky Rice &amp; Mango</h3>
+                    <p>Fragrant coconut sticky rice served with sweet ripe mango.</p>
+
+                    <div class="product-metrics">
+                        <p class="sample-rating-row">
+                            <strong>Sample rating</strong>
+                            <span class="sample-stars" role="img" aria-label="Rating 4.7 out of 5">
+                                <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                            </span>
+                            <strong class="sample-rating-score">4.7/5</strong>
+                        </p>
+                        <p class="profile-rating-heading"><span>Coconut and mango flavour</span><strong>4/5</strong></p>
+                        <div class="profile-rating-track" role="img" aria-label="Coconut and mango flavour rating: 4 out of 5"><span class="rating-fill level-4"></span></div>
+                    </div>
+
+                    <p><strong>Style:</strong> Rice dessert</p>
+                    <p><strong>Serving:</strong> 1 portion</p>
+                    <p><strong>Flavour:</strong> Coconut &amp; mango</p>
+                    <p><strong>Best with:</strong> Shan Highland</p>
+
+                    <p class="product-price">
+                        <span class="price-label">THADINGYUT -10%</span>
+                        <span class="price-values"><del class="original-price">£6.75</del><strong class="discount-price">£6.08</strong></span>
+                    </p>
+
+                    <button type="button" class="button add-to-cart" data-name="Coconut Sticky Rice and Mango" data-price="6.08">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i> Add to Cart
+                    </button>
+                </article>
+
+            </div>
+
+            <p class="sample-ratings-note customer-rating-notice">
+                <i class="fas fa-info-circle" aria-hidden="true"></i>
+                <strong>Customer rating note:</strong>
+                All ratings on this demonstration website are sample values
+                for presentation purposes. They are not verified customer reviews.
+            </p>
+
+        </section>
+
+        <!-- Suggested pairings -->
+        <section class="section coffee-pairings-section" id="coffeePairings">
+
+            <p class="small-title">OUR PAIRINGS</p>
+            <h2>Coffee Meets Something Sweet</h2>
+
+            <p class="section-intro">
+                Build your own café moment by pairing a favourite coffee
+                with one of our desserts.
+            </p>
+
+            <div class="card-container pairing-grid">
+
+                <article class="card pairing-card">
+                    <p class="small-title">BALANCED</p>
+                    <h3>Golden Orchard + Burnt Basque Cheesecake</h3>
+                    <p>Caramel and citrus notes balance the creamy vanilla and caramelised cheesecake.</p>
+                    <a href="#goldenOrchard" class="text-link">
+                        Explore the pairing <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="card pairing-card">
+                    <p class="small-title">RICH</p>
+                    <h3>Forest Ember + Chocolate Orange Tart</h3>
+                    <p>Dark chocolate and warm spice create a rich pairing with bright orange notes.</p>
+                    <a href="#forestEmber" class="text-link">
+                        Explore the pairing <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="card pairing-card">
+                    <p class="small-title">GENTLE</p>
+                    <h3>Shan Highland + Coconut Jaggery Pudding</h3>
+                    <p>Honey and cocoa notes complement the soft coconut and caramel-like sweetness.</p>
+                    <a href="#shanHighland" class="text-link">
+                        Explore the pairing <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="card pairing-card">
+                    <p class="small-title">CARAMEL &amp; CHOCOLATE</p>
+                    <h3>Brazil Amber + Caramel Pecan Brownie</h3>
+                    <p>Hazelnut, milk chocolate and caramel complement the rich chocolate, toasted pecans and soft caramel.</p>
+                    <a href="#brazilAmber" class="text-link">
+                        Explore the pairing <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="card pairing-card">
+                    <p class="small-title">APPLE &amp; CARAMEL</p>
+                    <h3>Colombia Velvet + Cinnamon Apple Crumble</h3>
+                    <p>Red apple, caramel and soft plum work beautifully with warm cinnamon apples and a crisp golden crumble.</p>
+                    <a href="#colombiaVelvet" class="text-link">
+                        Explore the pairing <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="card pairing-card">
+                    <p class="small-title">BRIGHT &amp; TROPICAL</p>
+                    <h3>Ethiopia Bloom + Mango Coconut Panna Cotta</h3>
+                    <p>Floral, berry and bright citrus notes pair with light coconut and fresh mango for a bright finish.</p>
+                    <a href="#ethiopiaBloom" class="text-link">
+                        Explore the pairing <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="section dark-section">
+
+            <p class="small-title">YOUR NEXT CUP</p>
+            <h2>Make It a Coffee Moment</h2>
+
+            <p>
+                Choose your coffee, add something sweet and
+                review your order in the shopping cart.
+            </p>
+
+            <div class="button-group">
+                <a href="cart.html" class="button light-button">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    View Your Cart
+                </a>
+
+                <a href="offers.html" class="button light-button">
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                    View Offers
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-brand-link" aria-label="Bean Boutique home">
+                    <img
+                        src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                        alt="Bean Boutique brand logo."
+                        class="footer-brand-image"
+                        loading="lazy"
+                    >
+
+                    <span class="footer-brand-name">
+                        <span class="footer-brand-main">BEAN</span>
+                        <span class="footer-brand-sub">BOUTIQUE</span>
+                    </span>
+                </a>
+
+                <p>Coffee, craft and community.</p>
+            </div>
+
+            <div class="footer-explore">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="equipment.html">Equipment</a>
+                <a href="events.html">Events</a>
+                <a href="offers.html">Offers</a>
+
+                <a href="cart.html" class="footer-cart-link">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>hello@beanboutique.com</p>
+                <p>+95 9 000 000 000</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

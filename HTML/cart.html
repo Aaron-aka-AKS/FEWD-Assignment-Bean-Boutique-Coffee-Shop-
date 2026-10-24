@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean Boutique | Shopping Cart</title>
+
+    <link rel="icon" type="image/png" href="../IMAGES/BEAN_BOUTIQUE_logo.png">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Shared JavaScript -->
+    <script defer src="../JS/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html" class="logo-link" aria-label="Bean Boutique home">
+
+                <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                     alt="Bean Boutique coffee shop logo"
+                     class="logo-image">
+
+                <span class="logo-name">
+                    <span class="logo-main">BEAN</span>
+                    <span class="logo-sub">BOUTIQUE</span>
+                </span>
+
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="mainNavigation" aria-label="Main navigation">
+
+            <ul class="nav-list">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="coffee.html">Coffee</a></li>
+
+                <li><a href="equipment.html">Equipment</a></li>
+
+                <li><a href="events.html">Events</a></li>
+
+                <li><a href="offers.html">Offers</a></li>
+
+                <li>
+                    <a href="cart.html"
+                       class="cart-link active"
+                       aria-label="Shopping cart"
+                       aria-current="page">
+
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+
+                        <span id="cartBadge" 
+                        class="cart-badge hidden">0</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="header-controls">
+
+            <button type="button"
+                    class="theme-button"
+                    id="themeButton"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false">
+
+                <i class="fas fa-moon" aria-hidden="true"></i>
+
+            </button>
+
+            <button type="button"
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="mainNavigation">
+
+                <i class="fas fa-bars" aria-hidden="true"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main id="mainContent">
+
+        <!-- Cart hero -->
+        <section class="page-hero cart-hero">
+
+            <img src="../IMAGES/CART_HERO.png"
+                 alt="Coffee-themed banner introducing the Bean Boutique shopping basket"
+                 class="cart-hero-image">
+
+            <div>
+
+                <p class="small-title">YOUR COFFEE JOURNEY</p>
+
+                <h1>Your Basket</h1>
+
+                <p>
+                    Collect your favourite coffees and café essentials
+                    in one place. Review your selections and prepare
+                    your order receipt.
+                </p>
+
+                <div class="button-group">
+
+                    <a href="coffee.html" class="button">
+                        <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                        Continue Shopping
+                    </a>
+
+                    <a href="#selectedProducts" class="button light-button">
+                        <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+                        Review Basket
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Selected products -->
+        <section class="section" id="selectedProducts">
+
+            <p class="small-title">YOUR SELECTION</p>
+
+            <h2>Selected Products</h2>
+
+            <p class="section-intro">
+                Review every product, price and quantity in your basket.
+            </p>
+
+            <div id="cartItems" aria-live="polite">
+
+                <p>Your cart is currently empty.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Order receipt -->
+        <section class="section" id="orderReceipt">
+
+            <p class="small-title">YOUR ORDER</p>
+
+            <h2>Order Receipt</h2>
+
+            <p class="section-intro">
+                Review your items, apply an eligible welcome discount
+                and check the final order total.
+            </p>
+
+            <details class="checkout-details">
+
+                <summary id="checkoutButton" class="button">
+
+                    <i class="fas fa-receipt" aria-hidden="true"></i>
+                    View Order Receipt
+
+                </summary>
+
+                <div class="checkout-receipt">
+
+                    <!-- Receipt header -->
+                    <div class="receipt-header">
+
+                        <div class="receipt-logo-icon">
+                            <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                        </div>
+
+                        <p class="small-title">BEAN BOUTIQUE</p>
+
+                        <h2>Your Order Summary</h2>
+
+                        <p>Thank you for choosing Bean Boutique.</p>
+
+                    </div>
+
+
+                    <!-- Welcome discount -->
+                    <section class="cart-discount-box">
+
+                        <div class="discount-heading">
+
+                            <i class="fas fa-gift" aria-hidden="true"></i>
+
+                            <div>
+
+                                <p class="small-title">
+                                    A LITTLE SOMETHING EXTRA
+                                </p>
+
+                                <h3>Enjoy 10% Off Your First Purchase</h3>
+
+                            </div>
+
+                        </div>
+
+                        <p>
+                            Enter the eligible welcome discount code
+                            provided through the homepage offer.
+                        </p>
+
+                        <form id="cartDiscountForm"
+                              class="cart-discount-form">
+
+                            <label for="cartDiscountCode"
+                                   class="visually-hidden">
+                                Discount code
+                            </label>
+
+                            <input type="text"
+                                   id="cartDiscountCode"
+                                   placeholder="Enter discount code"
+                                   maxlength="30"
+                                   autocomplete="off"
+                                   aria-describedby="cartDiscountMessage"
+                                   required>
+
+                            <button type="submit" class="button">
+
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                Apply Code
+
+                            </button>
+
+                        </form>
+
+                        <p id="cartDiscountMessage"
+                           class="form-message"
+                           role="status"
+                           aria-live="polite">
+
+                            Your welcome discount can be used
+                            on your first completed purchase only.
+
+                        </p>
+
+                    </section>
+
+
+                    <!-- Itemised receipt -->
+                    <section class="receipt-items-section">
+
+                        <p class="small-title">ITEMISED PURCHASE</p>
+
+                        <h3>Products in Your Order</h3>
+
+                        <div class="receipt-table-wrapper">
+
+                            <table class="receipt-items-table">
+
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Subtotal</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="receiptItems">
+
+                                    <tr>
+                                        <td colspan="4" class="receipt-empty">
+                                            Your receipt is empty.
+                                            Add products to see them here.
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Receipt totals -->
+                    <div class="cart-summary">
+
+                        <p class="small-title">YOUR PURCHASE</p>
+
+                        <h2>Receipt Details</h2>
+
+                        <div class="receipt-summary-row">
+
+                            <span>Number of items</span>
+
+                            <strong id="cartItemCount">0</strong>
+
+                        </div>
+
+                        <div class="receipt-summary-row">
+
+                            <span>Subtotal</span>
+
+                            <strong id="cartSubtotal">£0.00</strong>
+
+                        </div>
+
+                        <div class="receipt-summary-row"
+                             id="cartDiscountRow"
+                             hidden>
+
+                            <span>Welcome discount (10%)</span>
+
+                            <strong id="cartDiscountAmount">
+                                −£0.00
+                            </strong>
+
+                        </div>
+
+                        <div class="receipt-summary-row receipt-total-row">
+
+                            <span>Total Amount</span>
+
+                            <strong id="cartTotal">£0.00</strong>
+
+                        </div>
+
+                        <p class="receipt-currency-note">
+                            All prices are displayed in British pounds (GBP).
+                        </p>
+
+                    </div>
+
+
+                    <!-- Order confirmation -->
+                    <p id="checkoutMessage"
+                       class="form-message"
+                       role="status"
+                       aria-live="polite">
+
+                        Review your order before completing this
+                        demonstration checkout. No payment will be collected.
+
+                    </p>
+
+                    <button type="button"
+                            id="confirmOrderButton"
+                            class="button confirm-order-button">
+
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        Complete Demo Order
+
+                    </button>
+
+                    <a href="coffee.html" class="button light-button">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Continue Shopping
+
+                    </a>
+
+                </div>
+
+            </details>
+
+        </section>
+
+
+        <!-- More to explore -->
+        <section class="section">
+
+            <p class="small-title">DISCOVER MORE</p>
+
+            <h2>More to Explore</h2>
+
+            <p class="section-intro">
+                Discover more of what Bean Boutique has to offer,
+                from carefully selected coffee to brewing equipment
+                and café experiences.
+            </p>
+
+            <div class="card-container">
+
+                <article class="card">
+
+                    <div class="explore-icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Welcome to Bean Boutique</h3>
+
+                    <p>
+                        Discover our café, latest highlights and
+                        coffee favourites.
+                    </p>
+
+                    <a href="index.html" class="button light-button">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        Visit Home
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="explore-icon">
+                        <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Our Coffee Collection</h3>
+
+                    <p>
+                        Discover coffee blends, signature drinks
+                        and sweet treats.
+                    </p>
+
+                    <a href="coffee.html" class="button light-button">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        Explore Coffee
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="explore-icon">
+                        <i class="fas fa-coffee" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Brewing Equipment</h3>
+
+                    <p>
+                        Find equipment and accessories for
+                        better coffee at home.
+                    </p>
+
+                    <a href="equipment.html" class="button light-button">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        View Equipment
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="explore-icon">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Events &amp; Workshops</h3>
+
+                    <p>
+                        Discover coffee workshops, tastings and
+                        café experiences.
+                    </p>
+
+                    <a href="events.html" class="button light-button">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        Explore Events
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="explore-icon">
+                        <i class="fas fa-tags" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Special Offers</h3>
+
+                    <p>
+                        Explore seasonal promotions and
+                        coffee subscriptions.
+                    </p>
+
+                    <a href="offers.html" class="button light-button">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        View Offers
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="explore-icon">
+                        <i class="fas fa-cookie-bite" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Coffee &amp; Desserts</h3>
+
+                    <p>
+                        Discover coffee and dessert combinations
+                        for your next café moment.
+                    </p>
+
+                    <a href="coffee.html#coffeePairings"
+                       class="button light-button">
+
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        Find a Pairing
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Coffee promotion -->
+        <section class="section dark-section">
+
+            <p class="small-title">YOUR NEXT COFFEE MOMENT</p>
+
+            <h2>Something Good Is Brewing</h2>
+
+            <p>
+                Find your next favourite coffee at Bean Boutique.
+            </p>
+
+            <a href="coffee.html" class="button light-button">
+
+                <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                Explore Our Coffee
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html"
+                   class="footer-brand-link"
+                   aria-label="Bean Boutique home">
+
+                    <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                         alt="Bean Boutique coffee shop logo"
+                         class="footer-brand-image">
+
+                    <span class="footer-brand-name">
+                        <span class="footer-brand-main">BEAN</span>
+                        <span class="footer-brand-sub">BOUTIQUE</span>
+                    </span>
+
+                </a>
+
+                <p>Coffee, craft and community.</p>
+
+            </div>
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="coffee.html">Coffee</a>
+
+                <a href="equipment.html">Equipment</a>
+
+                <a href="events.html">Events</a>
+
+                <a href="offers.html">Offers</a>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>hello@beanboutique.com</p>
+
+                <p>+95 9 000 000 000</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Bean Boutique. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

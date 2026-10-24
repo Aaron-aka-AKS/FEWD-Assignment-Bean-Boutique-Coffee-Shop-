@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean Boutique | Brewing Equipment</title>
+
+    <link rel="icon" type="image/png" href="../IMAGES/BEAN_BOUTIQUE_logo.png">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Shared JavaScript -->
+    <script defer src="../JS/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html" class="logo-link" aria-label="Bean Boutique home">
+
+                <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                     alt="Bean Boutique coffee shop logo"
+                     class="logo-image">
+
+                <span class="logo-name">
+                    <span class="logo-main">BEAN</span>
+                    <span class="logo-sub">BOUTIQUE</span>
+                </span>
+            </a>
+        </div>
+
+        <nav id="mainNavigation" aria-label="Main navigation">
+            <ul class="nav-list">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html">Coffee</a></li>
+                <li>
+                    <a href="equipment.html" class="active" aria-current="page">
+                        Equipment
+                    </a>
+                </li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="offers.html">Offers</a></li>
+
+                <li>
+                    <a href="cart.html"
+                       class="cart-link"
+                       aria-label="Shopping cart"
+                       title="Shopping cart">
+
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+
+                        <span id="cartBadge" 
+                        class="cart-badge hidden">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-controls">
+
+            <button type="button"
+                    class="theme-button"
+                    id="themeButton"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false">
+
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+
+            <button type="button"
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="mainNavigation">
+
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main id="mainContent">
+
+        <!-- Equipment hero -->
+        <section class="page-hero equipment-hero">
+
+            <img src="../IMAGES/EQUIPMENT_HERO.png"
+                 alt="Coffee brewing tools arranged for different brewing methods"
+                 class="equipment-hero-image">
+
+            <div class="equipment-hero-content">
+
+                <p class="small-title">BREWING EQUIPMENT</p>
+
+                <h1>Brew Your Way</h1>
+
+                <p>
+                    Discover practical tools for espresso, immersion, pour-over
+                    and alternative brewing styles. Find the right equipment
+                    for your daily coffee ritual.
+                </p>
+
+                <div class="button-group">
+
+                    <a href="#equipmentCatalogue" class="button">
+                        Explore Equipment
+                    </a>
+
+                    <a href="coffee.html" class="button light-button">
+                        Explore Coffee
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Equipment catalogue -->
+        <section class="section equipment-section" id="equipmentCatalogue">
+
+            <p class="small-title">THE COLLECTION</p>
+
+            <h2>Tools for Better Coffee</h2>
+
+            <p class="section-intro equipment-intro">
+                From simple everyday brewers to precision equipment,
+                explore tools chosen for different brewing methods,
+                preferences and experience levels.
+            </p>
+
+            <div class="card-container equipment-grid">
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/FRENCH_PRESS.png"
+                         alt="Glass French press coffee maker with a plunger for immersion brewing"
+                         loading="lazy">
+
+                    <p class="small-title">IMMERSION BREWING</p>
+
+                    <h3>French Press</h3>
+
+                    <p>
+                        A classic brewer that produces rich, full-bodied
+                        coffee with simple preparation.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Morning coffee and shared brews.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Add coarse-ground coffee and hot water.
+                            Stir gently and steep for about four minutes.
+                            Press the plunger down slowly and pour the coffee.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£35.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="French Press"
+                            data-price="35">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/ESPRESSO_MACHINE.png"
+                         alt="Espresso machine for preparing concentrated espresso and café-style drinks at home"
+                         loading="lazy">
+
+                    <p class="small-title">ESPRESSO</p>
+
+                    <h3>Espresso Machine</h3>
+
+                    <p>
+                        Designed for concentrated espresso and
+                        café-style drinks at home.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Espresso, cappuccino and latte.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Fill the water reservoir and allow the machine
+                            to heat up. Add ground coffee to the portafilter
+                            and tamp evenly. Brew according to the
+                            manufacturer's instructions, then clean the
+                            equipment after use.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£195.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Espresso Machine"
+                            data-price="195">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/POUR_OVER.png"
+                         alt="Pour-over coffee dripper used with a paper filter for manual filter brewing"
+                         loading="lazy">
+
+                    <p class="small-title">FILTER BREWING</p>
+
+                    <h3>Pour Over Dripper</h3>
+
+                    <p>
+                        A controlled brewing method that can highlight
+                        delicate coffee flavours.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Light and medium roast coffees.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Place a paper filter in the dripper and rinse
+                            it with hot water. Add medium-fine ground coffee.
+                            Pour a little hot water over the grounds,
+                            wait about 30 seconds, then continue pouring
+                            in circular movements.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£29.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Pour Over Dripper"
+                            data-price="29">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/ELECTRIC_BURR_GRINDER.png"
+                         alt="Electric burr grinder for grinding coffee beans to a consistent size"
+                         loading="lazy">
+
+                    <p class="small-title">COFFEE GRINDING</p>
+
+                    <h3>Electric Burr Grinder</h3>
+
+                    <p>
+                        A consistent grinder that gives you greater
+                        control over coffee preparation.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Multiple brewing methods.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Add coffee beans to the hopper. Select a grind
+                            setting appropriate for your brewing method.
+                            Grind the beans and follow the manufacturer's
+                            instructions for cleaning.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£99.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Electric Burr Grinder"
+                            data-price="99">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/DIGITAL_COFFEE_SCALE.png"
+                         alt="Digital coffee scale for measuring coffee grounds and brewing water"
+                         loading="lazy">
+
+                    <p class="small-title">PRECISION BREWING</p>
+
+                    <h3>Digital Coffee Scale</h3>
+
+                    <p>
+                        Helps measure coffee and water so your favourite
+                        brew can be repeated more consistently.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Pour-over and manual brewing.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Place the scale on a flat surface and switch it on.
+                            Put your container on the scale and press tare
+                            to reset the weight. Measure your coffee and
+                            water before brewing.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£42.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Digital Coffee Scale"
+                            data-price="42">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/MOKA_POT.png"
+                         alt="Stovetop moka pot for preparing bold, concentrated coffee"
+                         loading="lazy">
+
+                    <p class="small-title">STOVETOP BREWING</p>
+
+                    <h3>Moka Pot</h3>
+
+                    <p>
+                        A traditional stovetop brewer for bold,
+                        concentrated coffee.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Strong coffee and milk-based drinks.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Fill the lower chamber with water up to the
+                            safety valve. Add ground coffee to the filter
+                            basket without pressing it down. Assemble the
+                            pot and heat it according to its instructions.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£38.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Moka Pot"
+                            data-price="38">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/AEROPRESS.png"
+                         alt="AeroPress manual coffee brewer for compact immersion and pressure brewing"
+                         loading="lazy">
+
+                    <p class="small-title">PRESSURE BREWING</p>
+
+                    <h3>AeroPress</h3>
+
+                    <p>
+                        A compact brewer that combines immersion and
+                        pressure for a smooth cup.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Travel and quick manual brewing.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Place a filter in the cap and attach it to
+                            the chamber. Add ground coffee and hot water,
+                            then stir gently. Steep briefly and press
+                            slowly over a sturdy cup.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£45.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="AeroPress"
+                            data-price="45">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/GOOSENECK_KETTLE.png"
+                         alt="Gooseneck kettle with a narrow curved spout for controlled coffee pouring"
+                         loading="lazy">
+
+                    <p class="small-title">WATER CONTROL</p>
+
+                    <h3>Gooseneck Kettle</h3>
+
+                    <p>
+                        A precision-pouring kettle designed for
+                        controlled manual brewing.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Pour-over and slow-pour methods.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Fill the kettle within its marked limits and
+                            heat the water. Hold the handle securely and
+                            pour slowly over the coffee grounds. Take care
+                            when handling hot water.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£70.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Gooseneck Kettle"
+                            data-price="70">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/ELECTRIC_MILK_FROTHER.png"
+                         alt="Electric milk frother for preparing warm milk foam for coffee drinks"
+                         loading="lazy">
+
+                    <p class="small-title">MILK PREPARATION</p>
+
+                    <h3>Electric Milk Frother</h3>
+
+                    <p>
+                        Create smooth, warm foam for café-style
+                        drinks at home.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Latte, cappuccino and mocha drinks.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Add milk up to the indicated fill line,
+                            close the lid and select the appropriate
+                            setting. Wait for the cycle to finish before
+                            pouring. Keep the electrical base dry.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£32.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Electric Milk Frother"
+                            data-price="32">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/COFFEE_STORAGE_CANISTER.png"
+                         alt="Coffee storage canister with a lid for keeping roasted coffee beans protected"
+                         loading="lazy">
+
+                    <p class="small-title">COFFEE STORAGE</p>
+
+                    <h3>Coffee Storage Canister</h3>
+
+                    <p>
+                        A practical container for protecting roasted
+                        coffee between brews.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Freshness and organised storage.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Place your coffee in a clean, dry canister
+                            and close the lid tightly. Store it in a
+                            cool, dry and dark place away from sunlight
+                            and moisture.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£28.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Coffee Storage Canister"
+                            data-price="28">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/ESPRESSO_KNOCK_BOX.png"
+                         alt="Espresso knock box for tapping used coffee grounds from a portafilter"
+                         loading="lazy">
+
+                    <p class="small-title">ESPRESSO ACCESSORY</p>
+
+                    <h3>Espresso Knock Box</h3>
+
+                    <p>
+                        A compact accessory for disposing of used
+                        espresso grounds more conveniently.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Espresso stations and home cafés.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Place the knock box on a stable surface.
+                            Tap the portafilter gently against the knock
+                            bar to release the used coffee puck.
+                            Empty and clean the box regularly.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£34.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Espresso Knock Box"
+                            data-price="34">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+
+                <article class="card equipment-card">
+
+                    <img src="../IMAGES/SIPHON_BREWER.png"
+                         alt="Glass siphon coffee brewer for specialty manual coffee preparation"
+                         loading="lazy">
+
+                    <p class="small-title">SPECIALTY BREWING</p>
+
+                    <h3>Siphon Brewer</h3>
+
+                    <p>
+                        A distinctive brewing method that creates a
+                        refined specialty coffee experience.
+                    </p>
+
+                    <div class="equipment-best-for">
+                        <strong>Best for</strong>
+                        <p>Specialty coffee and tasting sessions.</p>
+                    </div>
+
+                    <details class="equipment-guide">
+                        <summary>How to use</summary>
+
+                        <p>
+                            Assemble the brewer according to its
+                            instructions. Heat the water until it rises
+                            into the upper chamber, add coffee and stir.
+                            Remove the heat when brewing is complete and
+                            allow the coffee to drain. Handle hot glass carefully.
+                        </p>
+                    </details>
+
+                    <p class="product-price">£75.00</p>
+
+                    <button type="button"
+                            class="button add-to-cart"
+                            data-name="Siphon Brewer"
+                            data-price="75">
+
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        Add to Cart
+                    </button>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Brewing guides -->
+        <section class="section brewing-guide-section">
+
+            <p class="small-title">FIND YOUR METHOD</p>
+
+            <h2>Choose Your Brewing Style</h2>
+
+            <p class="section-intro">
+                Different equipment creates different coffee experiences.
+                Start with the brewing style that best fits your routine.
+            </p>
+
+            <div class="card-container brewing-guide-grid">
+
+                <article class="card">
+
+                    <p class="small-title">RICH &amp; FULL</p>
+
+                    <h3>Immersion Brewing</h3>
+
+                    <p>
+                        French Press and AeroPress are useful for
+                        people who enjoy a fuller cup and
+                        straightforward preparation.
+                    </p>
+
+                    <a href="#equipmentCatalogue"
+                       class="text-link equipment-browse-link">
+
+                        Browse Equipment
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <p class="small-title">CLEAN &amp; DELICATE</p>
+
+                    <h3>Filter Brewing</h3>
+
+                    <p>
+                        Pour-over equipment provides greater control
+                        and can highlight delicate flavours and aromas.
+                    </p>
+
+                    <a href="#equipmentCatalogue"
+                       class="text-link equipment-browse-link">
+
+                        Browse Equipment
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <p class="small-title">BOLD &amp; CONCENTRATED</p>
+
+                    <h3>Espresso Brewing</h3>
+
+                    <p>
+                        Espresso machines, grinders and accessories
+                        help create the foundation for café-style drinks.
+                    </p>
+
+                    <a href="#equipmentCatalogue"
+                       class="text-link equipment-browse-link">
+
+                        Browse Equipment
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <p class="small-title">SMOOTH &amp; REFRESHING</p>
+
+                    <h3>Cold Brew</h3>
+
+                    <p>
+                        Cold brew uses slow extraction to create
+                        a smooth, mellow coffee. A suitable brewing
+                        container can be a useful starting point.
+                    </p>
+
+                    <a href="#equipmentCatalogue"
+                       class="text-link equipment-browse-link">
+
+                        Browse Equipment
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <p class="small-title">BOLD &amp; TRADITIONAL</p>
+
+                    <h3>Stovetop Brewing</h3>
+
+                    <p>
+                        Moka Pots use heated water pressure
+                        to produce concentrated coffee with
+                        a distinctive character.
+                    </p>
+
+                    <a href="#equipmentCatalogue"
+                       class="text-link equipment-browse-link">
+
+                        Browse Equipment
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+
+                <article class="card">
+
+                    <p class="small-title">REFINED &amp; EXPERIMENTAL</p>
+
+                    <h3>Specialty Brewing</h3>
+
+                    <p>
+                        Siphon brewing offers a visual, hands-on
+                        preparation method for specialty coffee experiences.
+                    </p>
+
+                    <a href="#equipmentCatalogue"
+                       class="text-link equipment-browse-link">
+
+                        Browse Equipment
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Explore more -->
+        <section class="section dark-section equipment-final-cta">
+
+            <p class="small-title">YOUR NEXT CUP</p>
+
+            <h2>Make It a Coffee Moment</h2>
+
+            <p>
+                Pair your equipment with carefully selected
+                Bean Boutique coffees and create a brewing
+                setup that fits your everyday ritual.
+            </p>
+
+            <div class="button-group">
+
+                <a href="coffee.html" class="button light-button">
+                    <i class="fas fa-coffee" aria-hidden="true"></i>
+                    Explore Coffee
+                </a>
+
+                <a href="offers.html" class="button light-button">
+                    <i class="fas fa-tags" aria-hidden="true"></i>
+                    View Offers
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html"
+                   class="footer-brand-link"
+                   aria-label="Bean Boutique home">
+
+                    <img src="../IMAGES/BEAN_BOUTIQUE_logo.png"
+                         alt="Bean Boutique coffee shop logo"
+                         class="footer-brand-image"
+                         loading="lazy">
+
+                    <span class="footer-brand-name">
+                        <span class="footer-brand-main">BEAN</span>
+                        <span class="footer-brand-sub">BOUTIQUE</span>
+                    </span>
+                </a>
+
+                <p>Coffee, craft and community.</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="coffee.html">Coffee</a>
+
+                <a href="events.html">Events</a>
+
+                <a href="offers.html">Offers</a>
+
+                <a href="cart.html"
+                   class="footer-cart-link"
+                   aria-label="Shopping cart"
+                   title="Shopping cart">
+
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>hello@beanboutique.com</p>
+
+                <p>+95 9 000 000 000</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>&copy; 2026 Bean Boutique. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
